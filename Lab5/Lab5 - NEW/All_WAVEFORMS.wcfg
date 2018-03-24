@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab5/Lab5/Lab4_Test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="lab4_test" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/lab4_test/uut/Stack/PulsePush/output" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">output</obj_property>
+      <obj_property name="ObjectShortName">output</obj_property>
+      <obj_property name="label">Btn0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/PulsePop/output" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">output</obj_property>
+      <obj_property name="ObjectShortName">output</obj_property>
+      <obj_property name="label">Btn1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/PulseMode/output" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">output</obj_property>
+      <obj_property name="ObjectShortName">output</obj_property>
+      <obj_property name="label">Mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/num_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/MemoryU/doutb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">doutb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/TOS/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/ModeU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/Add_SubU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Add_Sub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/AdderSubtractorU/ControlAddU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Control_Add</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/SSD/dataU/decoderU/outvec" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">outvec[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outvec[31:0]</obj_property>
+      <obj_property name="label">SSD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/StackU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Stack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/FSM_Control_SwapU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Control_Swap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/Un_SwapU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Un_Swap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/uut/Stack/FSMTopU/UnarySubtractorU/ControlUnaryU/currents" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">currents</obj_property>
+      <obj_property name="ObjectShortName">currents</obj_property>
+      <obj_property name="label">FSM_Control_Unary</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab4_test/num_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num_in[7:0]</obj_property>
+   </wvobject>
+</wave_config>

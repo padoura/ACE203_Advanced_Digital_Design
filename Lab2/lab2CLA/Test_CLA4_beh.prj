@@ -1,0 +1,5 @@
+vhdl work "Sum.vhd"
+vhdl work "CarryLA.vhd"
+vhdl work "CarryGP.vhd"
+vhdl work "CLA4.vhd"
+vhdl work "Test_CLA4.vhd"

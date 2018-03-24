@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.xst" -ofn "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.syr" 
+xst -intstyle ise -ifn "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.xst" -ofn "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CLA4_UCF.ucf -p xc3s100e-cp132-5 "CLA4.ngc" CLA4.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o CLA4_map.ncd CLA4.ngd CLA4.pcf 
+par -w -intstyle ise -ol high -t 1 CLA4_map.ncd CLA4.ncd CLA4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml CLA4.twx CLA4.ncd -o CLA4.twr CLA4.pcf -ucf CLA4_UCF.ucf 
+bitgen -intstyle ise -f CLA4.ut CLA4.ncd 
+vhdtdtfi -lib work Sum.vhd -lib work CarryLA.vhd -lib work CarryGP.vhd -lib work CLA4.vhd -prj lab2CLA -o CLA4.spl -module CLA4 -template D:/Xilinx/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CLA4.spl {D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.sym} 

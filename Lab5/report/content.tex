@@ -1,0 +1,210 @@
+\section{Σκοπός Εργαστηριακής Άσκησης}
+
+Η πέμπτη και τελευταία εργαστηριακή άσκηση περιλαμβάνει το τελικό βήμα μετατροπής του κυκλώματός μας σε μία απλή αριθμομηχανή. Μετά την σχεδίαση του κυκλώματος αναγνώρισης έξι αριθμητικών και λογικών πράξεων στο τέταρτο εργαστήριο \en (push, pop, add, sub, unary sub, swap), \gr καλούμαστε τώρα να προσθέσουμε την καθεαυτή λειτουργικότητά τους. Συνεπώς, για την υλοποίησή τους χρειαζόμαστε τόσο τα συνδυαστικά κυκλώματα που εκτελούν τις πράξεις \en (datapath) \gr όσο και τις αντίστοιχες \en FSM \gr που ελέγχουν τα βήματά τους \en (control path). \gr
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 8mm 10mm 60mm 6mm,clip=true]{images/stacknew.pdf}}
+\caption{Το τροποποιημένο \en StackCircuit module \gr για τον έλεγχο των πράξεων. Το \en submodule FSMTop \gr παρουσιάζεται στο Σχήμα \ref{fig:fsmtop} και το διάγραμμα καταστάσεων της \en FSM\_Mode \gr στο Σχήμα \ref{fig:fsmmode}.  Στις προσθήκες του παρόντος εργαστηρίου περιλαμβάνονται: ο πολυπλέκτης που επιλέγει τι θα δοθεί στη μνήμη για εγγραφή, ένα κύκλωμα \en debouncer \gr (παραλλαγή του \en singlepulsegen \gr που μας δόθηκε) και ένας καταχωρητής ολίσθησης  (\en 2-bit) \gr για την εκτέλεση του \en Push \gr κατά την επιστροφή στο \en Mode 0. \gr
+Για χάρη καθαρότητας του σχήματος από το διάγραμμα παραλείπονται τα \en singlepulsegen \gr που μεσολαβούν μεταξύ των πλήκτρων (εκτός του \en Reset) \gr και του υπόλοιπου κυκλώματος.}
+\label{fig:Stack}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.4\textwidth, angle =-90, trim = 25mm 25mm 25mm 85mm,clip=true]{images/FSM_Mode.pdf}}
+\caption{Η τροποποιημένη μηχανή πεπερασμένων καταστάσεων ανώτερου ιεραρχικά επιπέδου \en FSM\_Mode, \gr η οποία ελέγχει τις μεταβάσεις μεταξύ των τριών \en modes. \gr Πλέον περιέχει και μία τέταρτη κατάσταση που αντιστοιχεί στην υπερχείλιση κατά την πρόσθεση/αφαίρεση.}
+\label{fig:fsmmode}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 5mm 22mm 30mm 2mm,clip=true]{images/fsmtop.pdf}}
+\caption{Το επεκταμένο \en FSMTop module. \gr Πέρα από τις \en FSM \gr αναγνώρισης κάθε πράξης ανά \en mode \gr που υλοποιήθηκαν στο τέταρτο εργαστήριο, προστέθηκαν ένας καταχωρητής (για την προσωρινή αποθήκευση του \en TOS \gr ή \en TOS - 1 \gr μετά από ένα \en pop), \gr δύο κυκλώματα προσθαφαιρετών (ένα για πρόσθεση/αφαίρεση και ένα για μοναδιαία αφαίρεση, Σχήμα \ref{fig:fsmaddsub}), την \en FSM\_Control\_Swap \gr (Σχήμα \ref{fig:fsmcontrol}) για τον έλεγχο της αντίστοιχης πράξης, και δύο πολυπλέκτες \en 32x8 \gr για την εγγραφή (αρχικά στον καταχωρητή και μετά στη μνήμη) του κατάλληλου αποτελέσματος κάθε φορά. Ο πολυπλέκτης \en 8x2 \gr (στο παρόν φαίνεται ως δύο παράλληλοι \en 4x1) \gr επιλέγει το σήμα που αλληλεπιδρά με το \en SSD \gr και την ανώτερη \en FSM\_Mode \gr όπως και προηγουμένως.}
+\label{fig:fsmtop}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+\begin{figure}
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.5\textwidth, angle =0, trim = 65mm 90mm 120mm 50mm,clip=true]{images/addersub.pdf}
+    \end{subfigure}%
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.35\textwidth, angle =0, trim = 25mm 55mm 25mm 25mm,clip=true]{images/fsm_control_add_sub.pdf}
+    \end{subfigure}
+	\caption{\emph{Αριστερά}: Το υποκύκλωμα \en AdderSubtractor. \gr Περιέχει το ακολουθιακό κύκλωμα προσθαφαιρέτη \en 8-bit, CLAddSub8, \gr το οποίο συντίθεται από δύο κυκλώματα \en CLA 4-bit \gr του δεύτερου εργαστηρίου, και την \en FSM \gr εκτέλεσης των πράξεων \en FSM\_Control\_Add\_Sub \gr (\emph{Δεξιά}). Το υποκύκλωμα \en UnarySubtractor \gr περιέχει αντίστοιχα την \en FSM\_Control\_Unary \gr και ως αφαιρετέο χρησιμοποιεί το 0.}
+	\label{fig:addersub}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.45\textwidth, angle =-90, trim = 25mm 25mm 25mm 150mm,clip=true]{images/fsm_control_unary.pdf}
+    \end{subfigure}%
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.45\textwidth, angle =-90, trim = 25mm 25mm 25mm 150mm,clip=true]{images/fsm_control_swap.pdf}
+    \end{subfigure}
+	\caption{Οι μηχανές πεπερασμένων καταστάσεων \en FSM\_Control\_Unary \gr (αριστερά) και \en FSM\_Control\_Unary \gr (δεξιά) που ελέγχουν τα βήματα εκτέλεσης των αντίστοιχων πράξεων.}
+	\label{fig:fsmcontrol}
+\end{figure}
+
+
+\section{Προεργασία-Περιγραφή}
+
+Ως συνέχεια της προηγούμενης εργαστηριακής άσκησης, σε αυτό το σημείο θα αναφερθούμε μόνο στα τμήματα του κυκλώματος που επεκτάθηκαν. Το ανώτατο ιεραρχικό επίπεδο (με τα \en modules StackCircuit, SSDCircuit) \gr παρέμεινε ίδιο με αυτό της τέταρτης άσκησης. Σχεδόν ίδιο παραμένει και το υποκύκλωμα των \en SSDs, \gr καθώς δεν προσθέσαμε κάποια νέα ένδειξη και η μόνη διαφορά έρχεται στην εμφάνιση του υπάρχοντος \en OVF \gr και στην υπερχείλιση πράξης. Στις επόμενες υποενότητες θα αναφερθούμε στις αλλαγές στο επίπεδο του \en StackCircuit, \gr και κυρίως στις προσθήκες στο επίπεδο του \en submodule \gr του, \en FSMTop, \gr όπου και προστέθηκε η πλειοψηφία των συμπληρωματικών κυκλωμάτων.
+
+\subsection{Γενική λειτουργία κυκλώματος}
+
+Προτού ξεκινήσουμε τη σύνοψη των αλλαγών στο επίπεδο αυτό (Σχήμα \ref{fig:Stack}), είναι σημαντικό (για τη λογική της λύσης μας) να σημειώσουμε ότι στο κύκλωμά μας χρησιμοποιούμε δίθυρη μνήμη. Έχοντας δίθυρη μνήμη αξιοποιούμε και τον μετρητή \en TOS - 1, \gr που είχαμε κατασκευάσει εξαρχής, για την πρόσβαση στην αντίστοιχη θέση της στοίβας. Επιπλέον, αυτό μας δίνει τη δυνατότητα να εκτελούμε μόνο ένα \en pop-push \gr για κάθε πράξη, και κατά συνέπεια να μας αρκεί μόνο ένας \en 8-bit \gr καταχωρητής. 
+
+Για ευκολότερη υλοποίηση της απαραίτητης λειτουργικότητας, το κύκλωμά μας εκτελεί πάντα ένα \en pop \gr κατά τη μετάβαση από \en Mode 0 $\rightarrow$ Mode 1, \gr και ένα \en push \gr κατά την επαναφορά στο \en Mode 0, \gr ανεξαρτήτως εκτέλεσης κάποιας πράξης ή όχι. Όπως θα δούμε παρακάτω, η χρήση του σωστού αριθμού στο αυτόματο \en push \gr εναπόκειται σε κατάλληλους πολυπλέκτες και σήματα επιλογής. Επιπλέον, με το επιτυχημένο πέρας κάθε πράξης το κύκλωμα επανέρχεται αυτόματα στο \en Mode 0 \gr χωρίς εμείς να πατήσουμε κάποιο πλήκτρο. Αυτή ακριβώς η μετάβαση ενεργοποιεί αυτόματα και το αυτόματο \en push. \gr
+
+
+\subsection{Τροποποιήσεις \latintext Stack module}
+
+Μιας και οι περισσότερες προσθήκες νέων \en FSM \gr πραγματοποιήθηκαν εσωτερικά του \en FSMTop, \gr στο ανώτερο επίπεδο χρειάστηκε η εξαγωγή περισσότερων σημάτων για την επικοινωνία μεταξύ της ανώτερης ιεραρχικά \en FSM\_Mode \gr και αυτών των κατώτερων \en FSM. \gr Έτσι, τα σήματα \en Done, SwapDone, UnaryDone \gr δηλώνουν το τέλος εκτέλεσης των πράξεων προσθαφαίρεσης, εναλλαγής και μοναδιαίας αφαίρεσης αντίστοιχα (όπως θα δούμε παρακάτω, είναι τα \en ms-bit \gr της εξόδου των αντίστοιχων \en FSM),  \gr ενώ το σήμα \en Ovf \gr ενημερώνει για υπερχείλιση κατά την πρόσθεση/αφαίρεση. Επιπλέον, το αποτέλεσμα της πράξης προς αποθήκευση δίνεται από το σήμα \en 8-bit RegisterOut, \gr ενώ το \en SwapEn \gr δίνει το σήμα για εγγραφή στο \en TOS - 1 \gr (αντί στο \en TOS) \gr αν το \en RegisterOut \gr περιέχει αποτέλεσμα \en swap. \gr 
+
+Το σήμα \en NorModeOut \gr (που όπως και στο τέταρτο εργαστήριο δηλώνει ότι βρισκόμαστε στο \en Mode 0) \gr πλέον χρησιμοποιείται και αυτό στον έλεγχο των αυτόματων \en push, pop \gr κατά την είσοδο και έξοδο από το \en Mode 0. \gr Εδώ για τον σωστό συγχρονισμό των σημάτων χρειάστηκε να χρησιμοποιήσουμε τόσο έναν τροποποιημένο \en debouncer \gr (ίδιος με το κύκλωμα \en singlepulsegen \gr που μας δόθηκε, με τη διαφορά ότι έχει ως αρχική κατάσταση την \en S2 \gr αντί για την \en S0), \gr όσο και έναν καταχωρητή ολίσθησης \en 2-bit. \gr Επιπλέον, για το διαχωρισμό των περιπτώσεων \en push \gr νέου αριθμού ή αυτόματου \en push \gr προσθέσαμε έναν πολυπλέκτη (32$\times$8, αλλά στην ουσία 16$\times$8).
+
+Τέλος, το Σχήμα \ref{fig:fsmmode} παρουσιάζει την τροποποιημένη \en FSM\_Mode, \gr όπου πλέον είναι εμφανής ο τρόπος αυτόματης μετάβασης είτε στο \en Mode 0 \gr στο τέλος επιτυχημένης πράξης, είτε στο \en OVF \gr για υπερχείλιση πρόσθεσης/αφαίρεσης (σημειωτέον ότι το \en OVF \gr για τη στοίβα εμφανίζεται κανονικά στο \en Mode 0 \gr όπως από το τρίτο εργαστήριο, και δεν αλλάζει ότι πράξη και αν κάνουμε στα υπόλοιπα \en modes). \gr
+
+
+\subsection{Τροποποιήσεις \latintext FSMTop module}
+
+Όπως προαναφέρθηκε, τα συμπληρωματικά κυκλώματα τέλεσης των πράξεων προστέθηκαν όλα σε αυτό το επίπεδο (Σχήμα \ref{fig:fsmtop}). Τα \en submodules FSMStack, FSM\_Add\_Sub, FSM\_Un\_Swap \gr και ο πολυπλέκτης 8$\times$2 ελέγχουν την αναγνώριση των πράξεων και μεταφέρθηκαν αυτούσια από το προηγούμενο εργαστήριο.
+
+Ξεκινώντας την περιγραφή των προσθηκών, ο καταχωρητής \en 8-bit \gr και δύο πολυπλέκτες 32$\times$8 χρησιμοποιούνται σε όλες τις περιπτώσεις (εκτέλεσης ή μη πράξης) των \en mode 1, 2. \gr Συγκεκριμένα, μέσω των πολυπλεκτών διαλέγουμε ποιον από τους πέντε αριθμούς (αποτέλεσμα πρόσθεσης/αφαίρεσης, αποτέλεσμα \en unary, \gr αποτέλεσμα \en swap, \gr τον αριθμό του \en TOS \gr ή του \en TOS - 1) \gr θα αποθηκεύσουμε προσωρινά στον καταχωρητή, ανάλογα πάντα με το ποια λειτουργία επιλέγεται κάθε φορά.
+
+Τα υπόλοιπα τρία \en modules (AdderSubtractor, UnarySubtractor, FSM\_Control\_Swap) \gr εκτελούν τις πράξεις και περιγράφονται στις αντίστοιχες υποενότητες που ακολουθούν.
+
+\subsection{\latintext Adder-Subtractor}
+
+Στο Σχήμα \ref{fig:addersub} παραθέτουμε το \en AdderSubtractor module, \gr που περιέχει έναν προσθαφαιρέτη \en 8-bit, \gr και την \en FSM\_Control\_Add\_Sub \gr που ελέγχει τα βήματα των πράξεων αυτών. Ο προσθαφαιρέτης έχει κατασκευαστεί ενώνοντας δύο \en CLA 4-bit, \gr δίνοντας ως κρατούμενο εισόδου τον \en Operator \gr (1 για αφαίρεση), περνώντας τον (πιθανώς) αφαιρέτη από \en xor \gr μαζί με αυτόν, και χρησιμοποιώντας τη συνάρτηση ελέγχου για υπερχείλιση (δείτε Κώδικα \ref{CLAddSub8}). Ο καθορισμός του \en Operator \gr γίνεται από το \en LSBit \gr της \en FSM\_Control\_Add\_Sub, \gr ενώ οι τελεστέοι έρχονται απευθείας από τα \en TOS, TOS - 1. \gr
+
+Για το σωστό συγχρονισμό των βημάτων της πράξης, η \en FSM\_Control\_Add\_Sub \gr εκτελεί συνολικά πέντε βήματα. Οι δύο πρώτες καταστάσης αναμονής δίνουν το σήμα \en LD, \gr το οποίο και ενημερώνει τον καταχωρητή με το αποτέλεσμα της πράξης, ενώ στην τρίτη κατάσταση αναμονή παρέχει το σήμα \en Done \gr που ειδοποιεί την \en FSM\_Mode \gr ότι το αποτέλεσμα της πράξης είναι έτοιμο για το τελικό \en push \gr στη στοίβα.
+
+
+\subsection{\latintext Unary}
+
+Ακριβώς αντίστοιχη είναι η διαδικασία \en Unary, \gr καθώς για την εκτέλεσή της απλά εισάγαμε ένα δεύτερο αντίγραφο της \en AdderSubtractor \gr (με όνομα \en UnarySubtractor), \gr το οποίο και εκτελεί πάντα την αφαίρεση 0 - \en TOS. \gr Αντίστοιχα γίνεται ο έλεγχος των βημάτων της πράξης από την \en FSM\_Control\_Unary \gr (Σχήμα \ref{fig:fsmcontrol}, αριστερά).
+
+
+\subsection{\latintext Swap}
+
+Για την εναλλαγή του \en TOS \gr με \en TOS - 1 \gr αρκεί μία \en FSM \gr τριών κύκλων (Σχήμα \ref{fig:fsmcontrol}, δεξιά). Με την επιλογή εκτέλεσης του \en swap, \gr το \en LSB \gr εξόδου \en (Swap\_En) \gr δίνει το σήμα αποθήκευσης του \en TOS - 1 \gr στον καταχωρητή (και αποθήκευσης του \en TOS \gr απευθείας στο \en TOS - 1), \gr ενώ στο επόμενο βήμα το \en MSB \gr ειδοποιεί την \en FSM\_Mode \gr ότι το αποτέλεσμα της πράξης είναι έτοιμο για το τελικό \en push. \gr
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.5\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/modeX3.pdf}}
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας του κυκλώματος κατά την μετάβαση \en Mode 0 $\rightarrow$ Mode 1 $\rightarrow$ Mode 2 $\rightarrow$ Mode 0 \gr με τριπλό πάτημα του πλήκτρου \en Mode (Btn2). \gr}
+\label{fig:modeX3}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.65\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/swap_waveform.pdf}}
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας \en swap. \gr}
+\label{fig:swap_waveform}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/unary_waveform.pdf}}
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας \en unary. \gr}
+\label{fig:unary_waveform}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/sub_waveform.pdf}}
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας αφαίρεσης ({(}-3) - (3) = -6) χωρίς \en overflow. \gr}
+\label{fig:sub_waveform}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/add_waveform.pdf}}
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας πρόσθεσης (126+125) με \en overflow. \gr}
+\label{fig:add_waveform}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+\section{Κυματομορφέ{ς}-Προσομοίωση}
+
+Με τις παραπάνω προσθήκες, το κύκλωμα απέκτησε πολλές νέες λειτουργίες που δεν έχουν δειχθεί στα προηγούμενα εργαστήρια. Λόγω του χωρικού περιορισμού στην αναφορά, εδώ θα αρκεστούμε στην παρουσίαση πέντε παραδειγμάτων λειτουργίας: 1) πλοήγηση στα \en modes \gr χωρίς τέλεση πράξης, 2) \en swap, 3) unary, \gr 4) αφαίρεση χωρίς υπερχείλιση, και 5) πρόσθεση με υπερχείλιση. Πέρα των παραπάνω, όλη η λειτουργικότητα μιας απλής αριθμομηχανής λειτουργεί κανονικά όπως δείχθηκε και στο \en board. \gr
+
+Όσον αφορά τη μετάβαση από το \en Mode 0 \gr ξανά στο \en Mode 0 \gr απλά με το πλήκτρο \en Mode \gr (Σχήμα \ref{fig:modeX3}), παρατηρούμε ότι αμέσως μετά τη μετάβαση \en Mode 0 $\rightarrow$ Mode 1 \gr πραγματοποιείται ένα \en pop, \gr με συνέπεια τα \en TOS (num\_out) \gr και \en TOS - 1 (doutb) \gr να δείχνουν μία θέση παρακάτω. Αντίστοιχα, μετά τη μετάβαση \en Mode 2 $\rightarrow$ Mode 0 \gr έχουμε \en push \gr (αντιγραφή με καθυστέρηση τριών κύκλων) με την επαναποθήκευση του αριθμού του \en TOS \gr (από τον καταχωρητή στη μνήμη.)
+
+Το \en swap \gr (Σχήμα \ref{fig:swap_waveform}) πραγματοποιείται όπως περιγράφθηκε και ο προηγουμένως. Ευρισκόμενοι στο \en Mode 2, \gr επιλέγουμε να γίνει \en swap \gr με το \en Btn1. \gr Με τη μετάβαση στην κατάσταση \en wait0 \gr της \en FSM\_Control \_Swap \gr πραγματοποιείται η αντιγραφή του \en TOS - 1 \gr στον καταχωρητή (δεν φαίνεται στο παρόν σχήμα), και η αντιγραφή του \en TOS \gr στο \en TOS - 1. \gr Έχοντας τρεις κύκλους περιθώριο μέχρι το \en push \gr μετά την επαναφορά στο \en mode 0, \gr στο δεύτερο κύκλο αντιγράφεται το \en TOS - 1 \gr από τον καταχωρητή στη μνήμη, ολοκληρώνοντας επιτυχημένα το \en swap \gr στη στοίβα.
+
+Με αντίστοιχο τρόπο λειτουργεί και το \en unary \gr (Σχήμα \ref{fig:unary_waveform}). Έτσι, δύο κύκλους μετά την επαναφορά της \en FSM\_Control\_Unary \gr στην αρχική της κατάσταση ο αντίθετος αριθμός αντιγράφεται (μέσω του καταχωρητή) στο \en TOS, \gr και στον τρίτο κύκλο πραγματοποιείται το \en push. \gr 
+
+Μιας και το \en unary \gr στην ουσία αποτελεί ένα παράδειγμα αφαίρεσης, η αφαίρεση (Σχήμα \ref{fig:sub_waveform}) λειτουργεί με την ίδια χρονικά λογική. Αξίζει εδώ να σημειώσουμε ότι η \en FSM\_Control\_Add \gr στην κατάσταση \en nothing \gr ελέγχεται από την έξοδο της \en FSM\_Add\_Sub. \gr Λόγω των επικοινωνούσων \en FSM \gr τα βήματα της πρόσθεσης και αφαίρεσης ξεκινούν ένα κύκλο αργότερα, ενώ εκτελείται και μία δεύτερη επανάληψη της αλληλουχίας μεταβάσεων της \en FSM\_Control\_Add, \gr το αποτέλεσμα της οποίας ωστόσο αγνοείται από το υπόλοιπο κύκλωμα. Κλείνοντας την ανάλυσή μας, στο Σχήμα \ref{fig:add_waveform} παραθέτουμε ένα παράδειγμα υπερχείλισης κατά την πρόσθεση. Βλέπουμε λοιπόν ότι η \en FSM\_Mode \gr (και άρα η έξοδος όλου του κυκλώματος) κλειδώνει στην κατάσταση υπερχείλισης με τον τερματισμό των βημάτων της πρόσθεσης.
+
+
+
+\section{Συμπεράσματα}
+
+Η πέμπτη και τελευταία εργαστηριακή άσκηση ολοκλήρωσε το σχεδιασμό μίας απλής αριθμομηχανής σε γλώσσα \en VHDL. \gr Έχοντας ήδη τη λειτουργικότητα της στοίβας και αναγνώρισης των επιλογών μας από τα προηγούμενα εργαστήρια, σε αυτό το στάδιο προσθέσαμε τα λογικά ανεξάρτητα κυκλώματα εκτέλεσης των πράξεων, των οποίων και η λειτουργία ελέγχεται και συγχρονίζεται κατάλληλα με το υπόλοιπο κύκλωμα βάσει των καταστάσεων επικοινωνούσων \en FSM. \gr
+
+
+\section{Παράρτημα - Κώδικας \latintext VHDL}
+\subsection{\latintext CLAddSub8}
+\label{CLAddSub8}
+\en
+\noskip
+\begin{lstlisting}[escapeinside={(*}{*)}]
+architecture Structural of CLAddSub8 is
+component CLA4 is
+    Port ( A : in  STD_LOGIC_VECTOR (3 downto 0);  B : in  STD_LOGIC_VECTOR (3 downto 0);
+           Cin : in  STD_LOGIC;  S : out  STD_LOGIC_VECTOR (3 downto 0);
+           C : out  STD_LOGIC_VECTOR (3 downto 0));
+end component;
+signal C, B_un, Sum : STD_LOGIC_VECTOR (7 downto 0);
+begin
+		CLA4U0: CLA4 Port Map (	A => A(3 downto 0),
+								B => B_un(3 downto 0),
+								Cin => Operator,
+								S => Sum(3 downto 0),
+								C => C(3 downto 0));
+		CLA4U1: CLA4 Port Map (	A => A(7 downto 4),
+								B => B_un(7 downto 4),
+								Cin => C(3),
+								S => Sum(7 downto 4),
+								C => C(7 downto 4));								
+		XOR8U : For i in 0 to 7 generate
+			B_un(i) <= B(i) xor Operator;
+		end generate;		
+		S <= Sum;		
+		Ovf <= ( C(7) xor C(6) ) ;
+end Structural;
+\end{lstlisting}
+\gr

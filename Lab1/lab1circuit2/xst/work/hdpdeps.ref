@@ -1,0 +1,36 @@
+V3 19
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" 2017/02/25.19:18:37 O.87xd
+EN work/AndGate 1488549118 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/AndGate/Behavioral 1488549119 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" \
+      EN work/AndGate 1488549118
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" 2017/03/02.21:47:39 O.87xd
+EN work/FullAdder 1488549124 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FullAdder/Structural 1488549125 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" \
+      EN work/FullAdder 1488549124 CP HalfAdder CP OrGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" 2017/02/25.19:25:57 O.87xd
+EN work/HalfAdder 1488549120 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/HalfAdder/Structural 1488549121 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" \
+      EN work/HalfAdder 1488549120 CP XorGate CP AndGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" 2017/02/24.22:59:51 O.87xd
+EN work/OrGate 1488549122 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/OrGate/Behavioral 1488549123 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" \
+      EN work/OrGate 1488549122
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" 2017/02/25.19:18:09 O.87xd
+EN work/XorGate 1488549116 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/XorGate/Behavioral 1488549117 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" \
+      EN work/XorGate 1488549116

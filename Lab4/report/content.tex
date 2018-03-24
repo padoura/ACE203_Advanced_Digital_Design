@@ -1,0 +1,146 @@
+\section{Σκοπός Εργαστηριακής Άσκησης}
+
+Η τέταρτη εργαστηριακή άσκηση αποτελεί τη συνέχεια σχεδίασης μίας απλής αριθμομηχανής σε \en VHDL. \gr Στόχος της παρούσας φάσης είναι η αναγνώριση και η αντίστοιχη απεικόνιση στα \en Seven Segment Displays (SSD), \gr έξι αριθμητικών και λογικών πράξεων, ενώ στην πέμπτη εργαστηριακή άσκηση θα προστεθεί και η καθεαυτή λειτουργικότητά τους. Για την εκτέλεση των έξι πράξεων ορίζονται τρία \en modes, \gr και είναι οι εξής: 1) \en Push \gr και 2) \en Pop \gr που ήδη έχουν υλοποιηθεί από την προηγούμενη άσκηση και αποτελούν το \en mode 0, \gr 3) \en 2's complement addition \gr και 4) \en substraction, \gr που συνθέτουν το \en mode 1, \gr και τέλος το \en mode 2 \gr που περιέχει τις \en 5) unary substraction (-TOS) \gr και 6) \en swap \gr των \en TOS \gr και \en TOS-1. \gr
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.8\textwidth, angle =0, trim = 50mm 132mm 50mm 32mm,clip=true]{images/document1.pdf}}
+\caption{Το πλήρες κύκλωμα στο ανώτατο ιεραρχικό επίπεδο. Το Σχήμα \ref{fig:Stack} απεικονίζει σε κατώτερο επίπεδο το \en StackCircuit. \gr Η δομή του \en SSDCircuit \gr παραμένει ίδια όπως παρουσιάστηκε στην τρίτη εργαστηριακή αναφορά.}
+\label{fig:top}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 2mm 20mm 40mm 6mm,clip=true]{images/document3.pdf}}
+\caption{Το τροποποιημένο \en StackCircuit module \gr για τον έλεγχο των πράξεων. Το \en submodule FSMTop \gr παρουσιάζεται στο Σχήμα \ref{fig:fsmtop} και το διάγραμμα καταστάσεων της \en FSM\_Mode \gr στο Σχήμα \ref{fig:fsmmode}. Για χάρη καθαρότητας του σχήματος από το διάγραμμα παραλείπονται τα κυκλώματα παλμών εισόδου \en (singlepulsegen) \gr που μεσολαβούν μεταξύ των πλήκτρων (εκτός του \en Reset) \gr και του υπόλοιπου κυκλώματος.}
+\label{fig:Stack}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.5\textwidth, angle =-90, trim = 25mm 25mm 25mm 105mm,clip=true]{images/FSM_Mode.pdf}}
+\caption{Η μηχανή πεπερασμένων καταστάσεων ανώτερου ιεραρχικά επιπέδου \en FSM\_Mode, \gr η οποία ελέγχει τις μεταβάσεις μεταξύ των τριών \en modes. \gr}
+\label{fig:fsmmode}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.7\textwidth, angle =0, trim = 3mm 110mm 120mm 20mm,clip=true]{images/document2.pdf}}
+\caption{Το \en FSMTop module \gr με τις \en FSM \gr αναγνώρισης κάθε πράξης ανά \en mode \gr που περιέχει (Σχήματα \ref{fig:fsmaddsub}-\ref{fig:fsmunswap}, η \en FSMStack \gr παρουσιάστηκε στην τρίτη αναφορά). \gr Η επιλογή του σήματος που προβάλλεται στα \en SSD \gr πραγματοποιείται από την έξοδο της \en FSM\_Mode \gr μέσω ενός πολυπλέκτη.}
+\label{fig:fsmtop}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.5\textwidth, angle =-90, trim = 25mm 25mm 25mm 100mm,clip=true]{images/FSM_Add_Sub.pdf}}
+\caption{Η μηχανή πεπερασμένων καταστάσεων \en FSM\_Add\_Sub, \gr η οποία ελέγχει την επιλογή πράξεων του \en mode 1. \gr}
+\label{fig:fsmaddsub}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.5\textwidth, angle =-90, trim = 25mm 25mm 25mm 99mm,clip=true]{images/FSM_Un_Swap.pdf}}
+\caption{Η μηχανή πεπερασμένων καταστάσεων \en FSM\_Un\_Swap, \gr η οποία ελέγχει την επιλογή πράξεων του \en mode 2. \gr}
+\label{fig:fsmunswap}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\section{Προεργασία-Περιγραφή}
+
+Ως συνέχεια της προηγούμενης εργαστηριακής άσκησης, σε αυτό το σημείο θα αναφερθούμε μόνο στα τμήματα του κυκλώματος που επεκτάθηκαν. Το ανώτατο ιεραρχικό επίπεδο (Σχήμα \ref{fig:top}) είναι σχεδόν το ίδιο με τη διαφορά ότι τώρα το η είσοδος \en mode \gr που δεν χρησιμοποιόταν στο τρίτο εργαστήριο, τώρα συνδέθηκε με το \en button 2. \gr Στις επόμενες υποενότητες θα αναφερθούμε στις αλλαγές εσωτερικά του \en StackCircuit, \gr αλλά και στις μικρές αλλαγές απεικόνισης των νέων επιλογών στο \en SSDCircuit. \gr
+
+
+\subsection{Τροποποιήσεις \latintext Stack module}
+
+Στο Σχήμα \ref{fig:Stack} ξαναπαρουσιάζουμε μαζί με τις νέες προσθήκες το κύκλωμα που υλοποιεί τη στοίβα. Όπως και τα \en PUSH, POP \gr στο προηγούμενο μέρος της άσκησης, έτσι και το πλήκτρο του \en MODE \gr περνάει μέσα από ένα \en debounce module \gr (παραλείπεται στο σχήμα για μείωση της πολυπλοκότητάς του). 
+
+Οι κυριότερες αλλαγές μας για το αυτό το εργαστήριο έρχονται στη δημιουργία μικρών επικοινωνούσων \en FSM. \gr Συγκεκριμένα, εισάγαμε μία νέα μηχανή καταστάσεων, την \en FSM\_Mode \gr (Σχήμα \ref{fig:fsmmode}), της οποίας οι τρεις καταστάσεις αντιστοιχούν στα τρία ζητούμενα \en modes. \gr Έτσι, η \en 2-bit \gr έξοδος αυτής \en FSM \gr ελέγχει ιεραρχικά τη λειτουργία όλων των υπόλοιπων \en FSM \gr του \en StackCircuit. \gr
+
+Οι υπόλοιπες \en FSM \gr με τη σειρά τους έχουν τον έλεγχο των πράξεων κάθε \en mode, \gr και για ευκολότερη διάκρισή τους στο κύκλωμα συνέθεσαν ένα ξεχωριστό \en submodule, \gr το \en FSMTop. \gr Η \en FSM\_Add\_Sub \gr (Σχήμα \ref{fig:fsmaddsub}) με τις τρεις καταστάσεις τις ελέγχει το τι θα απεικονιστεί τελικά στα \en SSD: \gr 1) κατάσταση \en Nothing \gr = απεικόνιση '1', 2) κατάσταση \en Add \gr =  απεικόνιση 'A', και 3) κατάσταση \en Sub \gr = απεικόνιση \en 'S'. \gr Με αντίστοιχο τρόπο λειτουργεί και η \en FSM\_Un\_Swap \gr (Σχήμα \ref{fig:fsmunswap}). Τα σήματα με όνομα \en ModeXYYYEn \gr αντιστοιχούν στο πάτημα του αντίστοιχου \en mode \gr και πράξης, ενώ και οι δύο \en FSM \gr είναι προγραμματισμένες έτσι ώστε να επιστρέφουν στην κατάσταση \en Nothing \gr με το που η αριθμομηχανή μεταβεί σε άλλο \en mode. \gr Επιπλέον, η \en FSMStack \gr παρέμεινε ίδια όπως περιγράφηκε στην τρίτη αναφορά, με τη διαφορά ότι πλέον δεν αλλάζει κατάσταση αν η \en FSM\_Mode \gr δεν βρίσκεται στο \en mode 0. \gr Καθώς όλες οι κατώτερες ιεραρχικά \en FSM \gr έχουν έξοδο \en 2-bit, \gr αυτές περνούν από ένα πολυπλέκτη, ο οποίος και ελέγχει ποια \en FSM \gr θα δωθεί ως έξοδος από το \en module \gr (σύμφωνα το \en mode \gr που βρισκόμαστε).
+
+Εκτός των παραπάνω,  στο \en StackCircuit \gr χρειάστηκαν μικρές προσθήκες λογικών πυλών για τον έλεγχο των \en counters, \gr όπου πλέον έχουμε και δεύτερο \en enable (EnT) \gr για να μεταβάλλονται μόνο όταν βρισκόμαστε στο \en mode 0 \gr (όπως δηλαδή ελέγχεται και η μνήμη). Τέλος, το σήμα ελέγχου του \en SSDCircuit \gr από το \en StackCircuit \gr επεκτάθηκε στα \en 4 bit \gr (έξοδοι \en FSM\_Mode, FSMTop), \gr καθώς πλέον στο κύκλωμα έχουμε εννέα διαφορετικές απεικονίσεις (βλέπετε επόμενη υποενότητα).
+
+\subsection{Τροποποιήσεις \latintext SSD module}
+
+Για τις απεικονίσεις στο \en SSD panel \gr του \en basys 2 \gr αξιοποιήσαμε σχεδόν αυτούσιο το \en SSD module \gr που υλοποιήσαμε για το τρίτο εργαστήριο. Όπως αναφέρθηκε, πέρα τον απεικονίσεων \en 'E', 'F', 'OVF' \gr του \en mode 0, \gr σε αυτή την άσκηση προστέθηκαν οι \en '1', 'A', ' S', '2', 'U', '[]' \gr των \en mode 1 \gr και 2. Τροποποιώντας απλά τον αποκωδικοποιητή που είχαμε σχεδιάσει από 2-\en to-32, \gr σε 4-\en to-32 \gr καταφέραμε να απεικονίσουμε όλες τις περιπτώσεις (δείτε αντίστοιχο κώδικα στο Παράρτημα \ref{decoder}).
+
+\section{Κυματομορφέ{ς}-Προσομοίωση}
+
+Μετά την υλοποίηση των παραπάνω κυκλωμάτων, προχωρήσαμε στην τροποποίηση του κώδικα \en test bench \gr για τον έλεγχο της ορθής λειτουργίας τόσο εξ' ολοκλήρου, όσο και των νέων τμημάτων του κυκλώματος. Για αποφυγή επαναλήψεων με το προηγούμενο εργαστήριο, στην παρούσα αναφορά παρουσιάζουμε μόνο τη νέα λειτουργικότητα του κυκλώματος. Συγκεκριμένα, στο Σχήμα \ref{fig:waveforms} παρουσιάζουμε ένα παράδειγμα εναλλαγής όλων των νέων \en modes \gr και πράξεων. Μετά από συνεχόμενα \en push \gr που γέμισαν τη μνήμη (κατάσταση \en full), \gr αλλάζουμε \en mode \gr πατώντας το αντίστοιχο \en button. \gr Στην απεικόνιση του πρώτου από τα αριστερά \en SSD \gr βλέπουμε ότι αλλάζει σε ένδειξη '1'. Στη συνέχεια, διαλέγοντας τα πλήκτρα \en push, pop \gr (δηλαδή τα πλήκτρα 0 και 1), μεταβαίνουμε στις καταστάσεις \en add, sub \gr της \en FSM\_Add\_Sub. \gr Μεταβαίνοντας στη συνέχεια στο \en mode 2, \gr επαληθεύουμε ότι η \en FSM\_Add\_Sub \gr επανέρχεται στην αρχική κατάσταση \en nothing. \gr Αντίστοιχα παρατηρούμε τις αναμενόμενες ενδείξεις του \en SSD \gr και για τις υπόλοιπες καταστάσεις του κυκλώματος. Τέλος, για να δοκιμάσουμε την ακεραιότητα της λειτουργίας της στοίβας, βλέπουμε ότι με ένα ακόμη \en push \gr μεταβαίνουμε σε \en ovf \gr όπως αναμενόταν, ανεξάρτητα από το τις υπόλοιπες \en FSM. \gr
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/waveform.pdf}}
+\caption{Τμήμα του διαγράμματος χρονισμού προσομοίωσης της λειτουργίας αναγνώρισης και απεικόνισης των νέων \en modes \gr και πράξεων. Η λειτουργικότητα της στοίβας όπως παρουσιάστηκε στην τρίτη αναφορά παραμένει ίδια.}
+\label{fig:waveforms}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+%\begin{figure}
+%    \centering
+%    \begin{subfigure}
+%        \centering
+%        \includegraphics[width=0.45\textwidth]{images/ovf.pdf}
+%    \end{subfigure}%
+%    \begin{subfigure}
+%        \centering
+%        \includegraphics[width=0.45\textwidth]{images/full.pdf}
+%    \end{subfigure}
+%     \begin{subfigure}
+%        \centering
+%        \includegraphics[width=0.6\textwidth]{images/empty.pdf}
+%    \end{subfigure}
+%	\caption{Τμήματα του διαγράμματος χρονισμού προσομοίωσης της λειτουργίας του κυκλώματος. Πάνω αριστερά: Γέμισμα μνήμης και υπερχείλιση. Πάνω δεξιά: Γέμισμα μνήμης και ανάκτηση από τη μνήμη. Κάτω: Έναρξη άδειας μνήμης.}
+%	\label{fig:waveforms}
+%\end{figure}
+
+
+
+
+\section{Συμπεράσματα}
+
+Η τέταρτη εργαστηριακή άσκηση αποτέλεσε το βήμα σχεδίασης του κυκλώματος αναγνώρισης και απεικόνισης των πράξεων που ζητούνται στην τελική αριθμομηχανή. Σε αυτό το εργαστήριο είχαμε την ευκαιρία να εξασκηθούμε για πρώτη φορά τόσο στη σχεδίαση επικοινωνούσων \en FSM, \gr όσο και στη διαδικασία επέκτασης ενός προϋπάρχοντος κυκλώματος με νέα λειτουργικότητα.
+
+
+\section{Παράρτημα - Κώδικας \latintext VHDL}
+\subsection{\latintext Decoder4to32}
+\label{decoder}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of Decoder4to32 is
+begin
+with InState select
+OutVec	<= X"FF038371"	when "0000", -- printing OVF: F = X"71", V = X"83", O = X"03"
+		X"FFFFFF71"	when "0001", -- printing F
+		X"FFFFFF61"	when "0010", -- printing E: E = X"61"
+		X"9FFFFFFF"	when "0100", -- printing 1: 1 = X"9F"
+		X"11FFFFFF"	when "0101", -- printing A: A = X"11" 
+		X"49FFFFFF"	when "0110", -- printing S: S = X"49"
+		X"25FFFFFF"	when "1000", -- printing 2: 2 = X"25" 0010 0101
+		X"83FFFFFF"	when "1001", -- printing U: U = X"83"
+		X"630FFFFF"	when "1010", -- printing []: [ = X"63", ] = X"0F"
+		X"FFFFFFFF"	when others; -- printing NONE (all off)
+end Behavioral;
+\end{Verbatim}
+\gr

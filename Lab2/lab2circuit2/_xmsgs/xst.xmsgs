@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit2\xst\work\xil_1552_17&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Lab2FSM.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Qbar</arg>&apos; of component &apos;<arg fmt="%s" index="4">DFlipFlop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Lab2FSM.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Qbar</arg>&apos; of component &apos;<arg fmt="%s" index="4">DFlipFlop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Lab2FSM.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Qbar</arg>&apos; of component &apos;<arg fmt="%s" index="4">DFlipFlop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">InVecBar</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">Loop2[0].NotIn</arg>&gt; of the block &lt;<arg fmt="%s" index="2">NotGate</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Lab2FSM</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">Loop2[1].NotIn</arg>&gt; of the block &lt;<arg fmt="%s" index="2">NotGate</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Lab2FSM</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">Loop2[2].NotIn</arg>&gt; of the block &lt;<arg fmt="%s" index="2">NotGate</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">Lab2FSM</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU0</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU1</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU0</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU6</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU0</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU7</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU2</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU3</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU2</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU4</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">LedCombLogic</arg>&gt;: instances &lt;<arg fmt="%s" index="2">OrU2</arg>&gt;, &lt;<arg fmt="%s" index="3">OrU5</arg>&gt; of unit &lt;<arg fmt="%s" index="4">OrGate</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Loop1[2].DFlipFlopU/Qbar</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Lab2FSM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Loop1[1].DFlipFlopU/Qbar</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Lab2FSM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Loop1[0].DFlipFlopU/Qbar</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Lab2FSM</arg>&gt;.
+</msg>
+
+</messages>
+

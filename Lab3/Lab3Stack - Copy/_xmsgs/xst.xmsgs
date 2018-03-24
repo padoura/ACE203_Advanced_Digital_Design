@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MemoryStack/MemoryStack_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/MemoryStack</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/MemoryStack/MemoryStack_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDControl.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RC</arg>&apos; of component &apos;<arg fmt="%s" index="4">Counter125K</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/StackCircuit.vhd</arg>&quot; line <arg fmt="%d" index="2">136</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">MemoryStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">TOSm1_Out</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">RC_TOSm1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">RC_TOS</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">AddPulse</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">CompIn&lt;12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">CompIn&lt;10:7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">CompIn&lt;5:4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">CompIn&lt;2:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">PulseAdd</arg>&gt; of the block &lt;<arg fmt="%s" index="2">singlepulsegen</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">StackCircuit</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">TOSm1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Stack</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Loop1[1].AndU0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">And4Ub</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Loop1[1].AndU0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">And4Ub</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Loop1[0].mux0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Loop1[1].mux0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Loop1[2].mux0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Loop1[3].mux0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SSD/controlU/counterU/RC</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Lab3Top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TOSm1/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">StackCircuit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TOSm1/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">StackCircuit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TOSm1/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">StackCircuit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TOSm1/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">StackCircuit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TOSm1/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">StackCircuit</arg>&gt;.
+</msg>
+
+</messages>
+

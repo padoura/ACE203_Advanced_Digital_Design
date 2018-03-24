@@ -1,0 +1,6 @@
+vhdl work "XorGate.vhd"
+vhdl work "NotGate.vhd"
+vhdl work "NorGate.vhd"
+vhdl work "AndGate.vhd"
+vhdl work "Lab1Circuit1.vhd"
+vhdl work "TopModule.vhd"

@@ -1,0 +1,27 @@
+Running: D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TestGates_isim_beh.exe -prj D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TestGates_beh.prj work.TestGates 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TestGates.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity AndGate [andgate_default]
+Compiling architecture behavioral of entity XorGate [xorgate_default]
+Compiling architecture behavioral of entity NorGate [norgate_default]
+Compiling architecture behavioral of entity NotGate [notgate_default]
+Compiling architecture structural of entity Lab1Circuit1 [lab1circuit1_default]
+Compiling architecture behavior of entity testgates
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TestGates_isim_beh.exe
+Fuse Memory Usage: 28584 KB
+Fuse CPU Usage: 1278 ms

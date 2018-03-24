@@ -1,0 +1,186 @@
+V3 103
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And4Gate.vhd" 2017/03/25.06:59:36 O.87xd
+EN work/And4Gate 1493377403 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And4Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/And4Gate/Structural 1493377404 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And4Gate.vhd" \
+      EN work/And4Gate 1493377403 CP AndGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And8Gate.vhd" 2017/03/28.05:39:33 O.87xd
+EN work/And8Gate 1493377409 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And8Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/And8Gate/Structural 1493377410 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/And8Gate.vhd" \
+      EN work/And8Gate 1493377409 CP And4Gate CP AndGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/AndGate.vhd" 2017/02/23.00:49:43 O.87xd
+EN work/AndGate 1493377399 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/AndGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/AndGate/Behavioral 1493377400 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/AndGate.vhd" \
+      EN work/AndGate 1493377399
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter125K.vhd" 2017/03/31.14:56:51 O.87xd
+EN work/Counter125K 1493377266 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter125K.vhd" \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
+AR work/Counter125K/Behavioral 1493377267 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter125K.vhd" \
+      EN work/Counter125K 1493377266
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter5bit.vhd" 2017/04/24.17:50:15 O.87xd
+EN work/Counter5bit 1493377278 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter5bit.vhd" \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
+AR work/Counter5bit/Behavioral 1493377279 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Counter5bit.vhd" \
+      EN work/Counter5bit 1493377278
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Decoder2to32.vhd" 2017/04/24.18:49:57 O.87xd
+EN work/Decoder4to32 1493377258 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Decoder2to32.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Decoder4to32/Behavioral 1493377259 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Decoder2to32.vhd" \
+      EN work/Decoder4to32 1493377258
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp5.vhd" 2017/03/28.05:41:58 O.87xd
+EN work/EqualComp5 1493377276 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp5.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/EqualComp5/Structural 1493377277 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp5.vhd" \
+      EN work/EqualComp5 1493377276 CP XnorGate CP And8Gate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp7.vhd" 2017/03/28.05:58:36 O.87xd
+EN work/EqualComp7 1493377268 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp7.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/EqualComp7/Structural 1493377269 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/EqualComp7.vhd" \
+      EN work/EqualComp7 1493377268 CP XnorGate CP And8Gate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMMode1.vhd" 2017/04/24.16:40:05 O.87xd
+EN work/FSM_Add_Sub 1493377256 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMMode1.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSM_Add_Sub/Behavioral 1493377257 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMMode1.vhd" \
+      EN work/FSM_Add_Sub 1493377256
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMssd.vhd" 2017/03/28.07:05:27 O.87xd
+EN work/FSMssd 1493377264 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMssd.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSMssd/Behavioral 1493377265 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMssd.vhd" \
+      EN work/FSMssd 1493377264
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMStack.vhd" 2017/03/28.09:49:20 O.87xd
+EN work/FSMStack 1493377411 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMStack.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSMStack/Behavioral 1493377412 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMStack.vhd" \
+      EN work/FSMStack 1493377411
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMTop.vhd" 2017/04/24.20:01:16 O.87xd
+EN work/FSMTop 1493377272 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMTop.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSMTop/Structural 1493377273 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSMTop.vhd" \
+      EN work/FSMTop 1493377272 CP FSMStack CP FSM_Un_Swap CP FSM_Add_Sub CP mux4x1
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_Mode.vhd" 2017/04/24.18:54:07 O.87xd
+EN work/FSM_Mode 1493377274 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_Mode.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSM_Mode/Behavioral 1493377275 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_Mode.vhd" \
+      EN work/FSM_Mode 1493377274
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_UN_SWAP.vhd" 2017/04/24.19:41:43 O.87xd
+EN work/FSM_Un_Swap 1493377413 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_UN_SWAP.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/FSM_Un_Swap/Behavioral 1493377414 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/FSM_UN_SWAP.vhd" \
+      EN work/FSM_Un_Swap 1493377413
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Lab3Top.vhd" 2017/04/24.19:13:06 O.87xd
+EN work/Lab3Top 1493377290 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Lab3Top.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Lab3Top/Behavioral 1493377291 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/Lab3Top.vhd" \
+      EN work/Lab3Top 1493377290 CP SSDCircuit CP StackCircuit
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/MemoryStack.vhd" 2017/03/25.05:35:09 O.87xd
+EN work/MemoryStack 1493377280 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/MemoryStack.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/MemoryStack/MemoryStack_a 1493377281 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/MemoryStack.vhd" \
+      EN work/MemoryStack 1493377280
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux.vhd" 2017/03/29.00:00:27 O.87xd
+EN work/mux 1493377401 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux/Behavioral 1493377402 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux.vhd" \
+      EN work/mux 1493377401
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux16x4.vhd" 2017/03/28.05:47:54 O.87xd
+EN work/mux16x4 1493377262 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux16x4.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux16x4/Structural 1493377263 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux16x4.vhd" \
+      EN work/mux16x4 1493377262 CP mux4x1
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux32x8.vhd" 2017/03/28.04:07:07 O.87xd
+EN work/mux32x8 1493377260 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux32x8.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux32x8/Structural 1493377261 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux32x8.vhd" \
+      EN work/mux32x8 1493377260 CP mux4x1
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux4x1.vhd" 2017/03/29.00:00:00 O.87xd
+EN work/mux4x1 1493377405 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux4x1.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux4x1/Structural 1493377406 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/mux4x1.vhd" \
+      EN work/mux4x1 1493377405 CP mux
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/singlepulsegen.vhd" 2017/03/06.19:28:46 O.87xd
+EN work/singlepulsegen 1493377270 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/singlepulsegen.vhd" \
+      PB ieee/std_logic_1164 1325952872 PB ieee/std_logic_arith 1325952873 \
+      PB ieee/STD_LOGIC_UNSIGNED 1325952875
+AR work/singlepulsegen/behavioral 1493377271 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/singlepulsegen.vhd" \
+      EN work/singlepulsegen 1493377270
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDCircuit.vhd" 2017/04/24.19:05:22 O.87xd
+EN work/SSDCircuit 1493377286 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDCircuit.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/SSDCircuit/Structural 1493377287 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDCircuit.vhd" \
+      EN work/SSDCircuit 1493377286 CP SSDControl CP SSDData
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDControl.vhd" 2017/03/31.14:56:46 O.87xd
+EN work/SSDControl 1493377282 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDControl.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/SSDControl/Structural 1493377283 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDControl.vhd" \
+      EN work/SSDControl 1493377282 CP mux16x4 CP FSMssd CP Counter125K \
+      CP EqualComp7
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDData.vhd" 2017/04/24.18:32:41 O.87xd
+EN work/SSDData 1493377284 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDData.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/SSDData/Structural 1493377285 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/SSDData.vhd" \
+      EN work/SSDData 1493377284 CP Decoder4to32 CP mux32x8
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/StackCircuit.vhd" 2017/04/24.19:28:30 O.87xd
+EN work/StackCircuit 1493377288 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/StackCircuit.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/StackCircuit/Structural 1493377289 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/StackCircuit.vhd" \
+      EN work/StackCircuit 1493377288 CP singlepulsegen CP FSMTop CP FSM_Mode \
+      CP EqualComp5 CP Counter5bit CP MemoryStack
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/XnorGate.vhd" 2017/03/25.07:00:09 O.87xd
+EN work/XnorGate 1493377407 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/XnorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/XnorGate/Behavioral 1493377408 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab4/lab4new/XnorGate.vhd" \
+      EN work/XnorGate 1493377407

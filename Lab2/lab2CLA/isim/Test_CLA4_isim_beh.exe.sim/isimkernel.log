@@ -1,0 +1,29 @@
+Command line:
+   Test_CLA4_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52021
+
+Sun Mar 26 12:48:18 2017
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 501.305 Meg
+
+ Total Signals          : 49
+ Total Nets             : 25
+ Total Signal Drivers   : 18
+ Total Blocks           : 20
+ Total Primitive Blocks : 11
+ Total Processes        : 17
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 515
+Total Line Count : 23
+
+ Total Simulation Time: 0.249602 sec
+
+ Current Memory Usage: 501.305 Meg
+
+Sun Mar 26 13:26:45 2017
+

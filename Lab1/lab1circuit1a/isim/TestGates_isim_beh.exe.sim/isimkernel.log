@@ -1,0 +1,29 @@
+Command line:
+   TestGates_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56588
+
+Tue Mar 07 00:38:35 2017
+
+
+ Elaboration Time: 0.015601 sec
+
+ Current Memory Usage: 501.207 Meg
+
+ Total Signals          : 41
+ Total Nets             : 18
+ Total Signal Drivers   : 18
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 13
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 378
+Total Line Count : 30
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 501.207 Meg
+
+Tue Mar 07 00:44:39 2017
+

@@ -1,0 +1,194 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> Reading design: Lab3Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Lab3Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Lab3Top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Lab3Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/MemoryStack/MemoryStack_a is now defined in a different file.  It was defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd", and is now defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd".
+WARNING:HDLParsers:3607 - Unit work/MemoryStack is now defined in a different file.  It was defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd", and is now defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd".
+WARNING:HDLParsers:3607 - Unit work/MemoryStack/MemoryStack_a is now defined in a different file.  It was defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd", and is now defined in "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd".
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/AndGate.vhd" in Library work.
+Architecture behavioral of Entity andgate is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/And4Gate.vhd" in Library work.
+Architecture structural of Entity and4gate is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux4x1.vhd" in Library work.
+Architecture structural of Entity mux4x1 is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/XnorGate.vhd" in Library work.
+Architecture behavioral of Entity xnorgate is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/And8Gate.vhd" in Library work.
+Architecture structural of Entity and8gate is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMStack.vhd" in Library work.
+Architecture behavioral of Entity fsmstack is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_UN_SWAP.vhd" in Library work.
+Entity <FSM_Un_Swap> compiled.
+Entity <FSM_Un_Swap> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_Add_Sub.vhd" in Library work.
+Entity <FSM_Add_Sub> compiled.
+Entity <FSM_Add_Sub> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Decoder2to32.vhd" in Library work.
+Entity <Decoder4to32> compiled.
+Entity <Decoder4to32> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux32x8.vhd" in Library work.
+Architecture structural of Entity mux32x8 is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux16x4.vhd" in Library work.
+Architecture structural of Entity mux16x4 is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMssd.vhd" in Library work.
+Architecture behavioral of Entity fsmssd is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Counter125K.vhd" in Library work.
+Entity <counter125k> compiled.
+Entity <counter125k> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/EqualComp7.vhd" in Library work.
+Architecture structural of Entity equalcomp7 is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/singlepulsegen.vhd" in Library work.
+Architecture behavioral of Entity singlepulsegen is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMTop.vhd" in Library work.
+Entity <FSMTop> compiled.
+Entity <FSMTop> (Architecture <Structural>) compiled.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab3\Lab3Stack\xst\work\xil_4160_23" will remain.  System error message is:  File exists
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_Mode.vhd" in Library work.
+Entity <FSM_Mode> compiled.
+Entity <FSM_Mode> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/EqualComp5.vhd" in Library work.
+Architecture structural of Entity equalcomp5 is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Counter5bit.vhd" in Library work.
+Entity <counter5bit> compiled.
+Entity <counter5bit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd" in Library work.
+Architecture memorystack_a of Entity memorystack is up to date.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDControl.vhd" in Library work.
+Entity <ssdcontrol> compiled.
+Entity <ssdcontrol> (Architecture <structural>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDData.vhd" in Library work.
+Entity <ssddata> compiled.
+Entity <ssddata> (Architecture <structural>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDCircuit.vhd" in Library work.
+Entity <ssdcircuit> compiled.
+Entity <ssdcircuit> (Architecture <structural>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/StackCircuit.vhd" in Library work.
+Entity <stackcircuit> compiled.
+Entity <stackcircuit> (Architecture <structural>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top.vhd" in Library work.
+Entity <lab3top> compiled.
+Entity <lab3top> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd" in Library work.
+Architecture memorystack_a of Entity memorystack is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Lab3Top> in library <work> (architecture <behavioral>).
+"D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top.vhd" line 78: In entity <Lab3Top>
+ERROR:Xst:2585 - Port <Add> of instance <Stack> does not exist in definition <StackCircuit>. Please compare the definition of block <StackCircuit> to its component declaration to detect the mismatch.
+--> 
+
+Total memory usage is 243704 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+vhdl isim_temp "OrGate.vhd"
+vhdl isim_temp "Or3Gate.vhd"
+vhdl isim_temp "AndGate.vhd"
+vhdl isim_temp "OneHotCombLogic.vhd"
+vhdl isim_temp "Test_OneHotCombLogic.vhd"

@@ -1,0 +1,3 @@
+vhdl isim_temp "OrGate.vhd"
+vhdl isim_temp "LedCombLogic.vhd"
+vhdl isim_temp "Test_Leds.vhd"

@@ -1,0 +1,26 @@
+Running: D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Test_CLA4_isim_beh.exe -prj D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Test_CLA4_beh.prj work.Test_CLA4 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Sum.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryLA.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryGP.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Test_CLA4.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity CarryGP [carrygp_default]
+Compiling architecture behavioral of entity CarryLA [carryla_default]
+Compiling architecture behavioral of entity Sum [sum_default]
+Compiling architecture structural of entity CLA4 [cla4_default]
+Compiling architecture behavior of entity test_cla4
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Test_CLA4_isim_beh.exe
+Fuse Memory Usage: 34652 KB
+Fuse CPU Usage: 592 ms

@@ -1,0 +1,204 @@
+\section{Σκοπός Εργαστηριακής Άσκησης}
+
+Σημαντικός σκοπός του μαθήματος συνολικά αποτελεί η εκμάθηση του ιεραρχικού τρόπου σχεδίασης ψηφιακών συστημάτων. Στο πλαίσιο των εργαστηριακών ασκήσεων χρησιμοποιούνται τα προγραμματιζόμενα ολοκληρωμένα κυκλώματα \en FPGA, \gr και πιο συγκεκριμένα το \en Basys 2 \gr του κατασκευαστή \en Xilinx. \gr Συνεπώς, η πρώτη στη σειρά εργαστηριακή άσκηση αποτελεί για τους φοιτητές μία εισαγωγή στη χρήση της γλώσσας περιγραφής υλικού \en VHDL, \gr αλλά και του επίσημου εργαλείου σχεδίασης \en Xilinx ISE. \gr Αυτό με τη σειρά του προσφέρει μία αυτοματοποιημένη πλατφόρμα σχεδιασμού συμπεριφορικού/δομικού μοντέλου κυκλωμάτων, προσομοίωσης της λειτουργίας τους και την περαιτέρω σύνθεση και υλοποίηση τους σε \en FPGA. \gr 
+
+Στην παρούσα άσκηση λοιπόν χρησιμοποιούμε δύο πολύ απλά παραδείγματα κυκλωμάτων: 1) απλή υλοποίηση πυλών δύο εισόδων, 2) ιεραρχική υλοποίηση ενός πλήρους αθροιστή με χρήση ημιαθροιστών. Η ευκολία αυτών των δύο κυκλωμάτων επιτρέπει την άμεση εξοικείωση με τη γλώσσα και το εργαλείο σχεδίασης, με τη δομική σχεδιαστική ροή και φυσικά με το ίδιο το ολοκληρωμένο κύκλωμα.
+
+
+
+\section{Προεργασία-Περιγραφή}
+
+\begin{figure}[htpb]
+\centering
+\setlength{\abovecaptionskip}{-10pt}
+\makebox[\textwidth]{%
+\includegraphics[width=0.7\textwidth, angle =0, trim = 5mm 10mm 40mm 15mm,clip=true]{images/circuit1.pdf}}
+% Place the label just after the caption to make the link work
+\en
+\begin{align*}
+\textup{Led}(0) &= \textup{IN0}\cdot \textup{IN1} \cdot \textup{Btn0} & \textup{Led}(3) &= \overline{\textup{IN0}}\cdot \textup{Btn3}\\
+\textup{Led}(1) &= (\textup{IN0}\oplus \textup{IN1}) \cdot \textup{Btn1} & \textup{Led}(4) &= \textup{IN0}\\
+\textup{Led}(2) &= \overline{(\textup{IN0} + \textup{IN1})} \cdot \textup{Btn2} & \textup{Led}(5) &= \textup{IN1}\\
+\end{align*}
+\gr
+\caption{Λογικό διάγραμμα σε επίπεδο πυλών και οι αντίστοιχες εξισώσεις του κυκλώματος 1.}
+\label{fig:circuit1}
+\end{figure} % table makes a floating object with a title
+
+
+
+
+
+\begin{figure}[htpb]
+\centering
+\setlength{\abovecaptionskip}{-20pt}
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 10mm 95mm 30mm 60mm,clip=true]{images/FullAdder.pdf}}
+% Place the label just after the caption to make the link work
+\en
+\begin{align*}
+\textup{First HalfAdder: } && \textup{S} &= \textup{IN0}\oplus \textup{IN1} & \textup{C}_0 &= \textup{IN0} \cdot \textup{IN0}\\
+\textup{Second HalfAdder: }&& \textup{Led(0)} &= \textup{IN2} \oplus \textup{S}_0 & \textup{C}_1 &= \textup{IN2} \cdot \textup{S}_0\\
+&&&&  \textup{Led}(1) &= \textup{C}_0 + \textup{C}_1
+\end{align*}
+\gr
+\caption{\en Block diagram \gr και οι αντίστοιχες εξισώσεις του \en 1-bit full adder, \gr δομημένος με δύο \en half adders \gr και μία πύλη \en OR.}
+\label{fig:FullAdder}
+\end{figure} % table makes a floating object with a title
+
+%\begin{figure}[htpb]
+%\centering
+%\makebox[\textwidth]{%
+%\includegraphics[width=0.5\textwidth, angle =0, trim = 10mm 80mm 150mm 75mm,clip=true]{images/HalfAdder.pdf}}
+%% Place the label just after the caption to make the link work
+%\caption{Διάγραμμα σε επίπεδο πυλών του \en Half Adder.\gr}
+%\label{fig:HalfAdder}
+%\end{figure} % table makes a floating object with a title
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/Circ1sim.pdf}}
+% Place the label just after the caption to make the link work
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας του κυκλώματος 1 για όλες τις πιθανές περιπτώσεις.}
+\label{fig:Circ1sim}
+\end{figure} % table makes a floating object with a title
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/FAsim.pdf}}
+% Place the label just after the caption to make the link work
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας του \en Full Adder \gr για όλες τις πιθανές περιπτώσεις. Το \en S \gr και \en C \gr αντιστοιχούν στο \en Led(0) \gr και \en Led(1) \gr αντίστοιχα.}
+\label{fig:FAsim}
+\end{figure} % table makes a floating object with a title
+
+%\setlength{\abovedisplayskip}{-10pt}
+%\setlength{\belowdisplayskip}{3pt}
+
+
+
+
+
+
+Το Σχήμα \ref{fig:circuit1} απεικονίζει το πρώτο ζητούμενο κύκλωμα της άσκησης και τις εξισώσεις που το περιγράφουν. Οι πύλες του πρώτου επιπέδου αντιστοιχούν πλήρως στη ζητούμενη λειτουργία της εκφώνησης, ενώ οι πύλες εξόδου \en AND \gr επιτρέπουν την εμφάνιση του αποτελέσματος των πρώτων πυλών μόνο με το πάτημα των αντίστοιχων \en Buttons. \gr Επιπλέον, τα \en leds \gr 4 έως 5 συνδέονται απευθείας με τις δύο εισόδους. Αντίθετα, τα \en leds \gr 6 και 7, τα οποία δίνονται ως έξοδοι στον πίνακα της εκφώνησης, δεν συμμετέχουν σε κάποια λειτουργία και επιλέξαμε να τα κρατήσουμε σβηστά.
+
+Στο Σχήμα \ref{fig:FullAdder} παρουσιάζουμε το \en block diagram \gr και τις αντίστοιχες εξισώσεις της υλοποίησης ενός πλήρους αθροιστή (\en full adder) \gr με τη χρήση ημιαθροιστών (\en half adders). \gr Όπως ζητήθηκε από τις προδιαγραφές της άσκησης, ο πλήρης αθροιστής δέχεται τρεις \en 1-bit \gr εισόδους \en (IN0...IN2), \gr και παρέχει ως έξοδο \en 2 bit, \gr δηλαδή το \en Sum \gr και το \en Carry \gr (στα \en Led(0) \gr και \en Led(1) \gr αντίστοιχα).
+
+Για την καλύτερή εξάσκησή μας για τα επόμενα εργαστήρια, χρησιμοποιήσαμε δομικό τρόπο σχεδίασης \en (structural design) \gr για την υλοποίηση και των δύο κυκλωμάτων. \gr Συγκεκριμένα, για κάθε πύλη \en (AND, NOT, NOR, XOR, OR) \gr δημιουργήσαμε ξεχωριστό \en module \gr και \en entity, \gr και ορίσαμε τη λειτουργία τους με \en behavioural architecture. \gr Αυτές χρησίμευσαν ως δομικές μονάδες για την σύνθεση των ανώτερων ιεραρχικά μονάδων: \en Half Adder \gr και \en Full Adder. \gr Ως παράδειγμα αυτού του τρόπου σχεδίασης στο παράρτημα παραθέτουμε τους κώδικες \en (entity-architecture) \gr για τον πλήρη αθροιστή.
+
+
+
+\section{Κυματομορφέ{ς}-Προσομοίωση}
+
+Μετά την υλοποίηση των παραπάνω κυκλωμάτων σε κώδικα \en VHDL, \gr προχωρήσαμε στη δημιουργία κώδικα \en test bench \gr για τον έλεγχο της ορθής λειτουργίας τους μέσω προσομοίωσης του δομικού τους μοντέλου. Και στις δύο περιπτώσεις η προσομοίωση παρήγαγε τα αναμενόμενα αποτελέσματα.
+
+Ειδικότερα, στο Σχήμα \ref{fig:Circ1sim} παραθέτουμε την κυματομορφή της προσομοίωσης του κυκλώματος 1. Η συγκεκριμένη προσομοίωση καλύπτει όλες τις δυνατές περιπτώσεις, καθώς η ένδειξη κάθε \en led \gr αντιστοιχεί αποκλειστικά στην έξοδο μίας πύλης του πρώτου επιπέδου (όταν φυσικά τα \en buttons \gr είναι ενεργά). Επομένως, έως τα \en 400 ns \gr που τα \en buttons \gr δεν είναι πατημένα, τα λιγότερο σημαντικά ψηφία \en (leds) \gr είναι 0000. Μετά τα \en 400 ns, \gr όλα τα \en buttons \gr ενεργοποιούνται και μπορούμε να δούμε τα λογικά αποτελέσματα της \en NOT (400-500 \gr και μετά τα \en 700 ns), \gr της \en XOR \gr (400-500 \gr και \en 600-700 ns), της \en AND (500-600 ns), \gr και της \en NOR (700 ns \gr και μετά). Από την άλλη πλευρά, το πέμπτο και έκτο ψηφίο ενεργοποιούνται αναμενόμενα όταν τα \en In0 \gr και \en In1 \gr είναι ενεργά αντίστοιχα (ανεξαρτήτως \en button). \gr
+
+Τέλος, όσον αφορά την προσομοίωση του πλήρους αθροιστή, η παραγόμενη κυματομορφή (Σχήμα \ref{fig:FAsim}) παρουσιάζει όλες τις δυνατές περιπτώσεις πρόσθεσης τριών \en 1 bit \gr ψηφίων (με χρονική σειρά, το + συμβολίζει εδώ αριθμητική πράξη): α) 0+0+0 = 00, β) 0+0+1 = 01, γ) 0+1+0 = 01, δ) 0+1+1 = 10, ε) 1+0+0 = 01, στ) 1+0+1 = 10, ζ) 1+1+0 = 10, και η) 1+1+1 = 11).
+
+
+
+
+\section{Συμπεράσματα}
+
+Η παρούσα εργαστηριακή άσκηση προσέφερε μία πρώτη πρακτική εξοικείωση τόσο με τη γλώσσα \en VHDL \gr όσο και με τη σχεδιαστική ροή κυκλωμάτων μέσω του εργαλείου \en Xilinx ISE. \gr Στηριζόμενοι σε δύο πολύ απλά παραδείγματα κυκλωμάτων, είχαμε την ευκαιρία να εξασκηθούμε στο δομικό τρόπο σχεδίασης κυκλωμάτων, χρησιμοποιώντας και συνδέοντας κατάλληλα ιεραρχικά κατώτερες μονάδες για την σύνθεση μεγαλύτερων σε ανώτερο ιεραρχικά επίπεδο. Επιπλέον, εξοικειωθήκαμε με τη χρήση προσομοίωσης του συμπεριφορικού/δομικού μοντέλου και την ανάγνωση των αντίστοιχων διαγραμμάτων χρονισμού. Τέλος, γνωρίσαμε μέσω του \en Xilinx ISE \gr και την υπόλοιπη αλληλουχία διαδικασιών \en (Translation, Map, Place and Route) \gr έως τη δημιουργία του αρχείου \en .bit \gr και τη φόρτωσή του στην \en FPGA Basys 2. \gr
+
+
+
+\section{Παράρτημα - Κώδικας \latintext VHDL}
+\subsection{\latintext Full Adder}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+entity FullAdder is
+    Port ( In0 : in  STD_LOGIC;
+           In1 : in  STD_LOGIC;
+           In2 : in  STD_LOGIC;
+           S : out STD_LOGIC;
+	    C : out STD_LOGIC);
+end FullAdder;
+
+architecture Structural of FullAdder is
+	signal HA0_C, HA0_S, HA1_C: STD_LOGIC;
+
+	component OrGate is
+		Port(   In0 : in STD_LOGIC;
+			In1 : in STD_LOGIC;
+			Out0 : out STD_LOGIC);
+	end component;
+
+	component HalfAdder is
+		Port (  In0 : in  STD_LOGIC;
+			In1 : in  STD_LOGIC;
+			S : out  STD_LOGIC;
+			C : out  STD_LOGIC);
+	end component;
+
+	begin
+		HA0: HalfAdder Port Map (In0 => In0,
+					In1 => In1,
+					S => HA0_S,
+					C => HA0_C);
+											
+		HA1: HalfAdder Port Map (In0 => In2,
+					In1 => HA0_S,
+					S => S,
+					C => HA1_C);
+
+		Or0: OrGate Port Map (In0 => HA1_C,
+					In1 => HA0_C,
+					Out0 => C);	
+
+end Structural;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext Half Adder}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+entity HalfAdder is
+    Port ( In0 : in  STD_LOGIC;
+           In1 : in  STD_LOGIC;
+           S : out  STD_LOGIC;
+           C : out  STD_LOGIC);
+end HalfAdder;
+
+architecture Structural of HalfAdder is
+	component AndGate is
+		Port	(In0 : in STD_LOGIC;
+			    In1 : in STD_LOGIC;
+			    Out0 : out STD_LOGIC);
+	end component;
+	component XorGate is
+		Port	(In0 : in STD_LOGIC;
+			    In1 : in STD_LOGIC;
+			    Out0 : out STD_LOGIC);
+	end component;
+	begin
+		XorU: XorGate Port Map (In0 => In0,
+					In1 => In1,
+					Out0 => S);
+											
+		AndU: AndGate Port Map (In0 => In0,
+					In1 => In1,
+					Out0 => C);
+end Structural;
+\end{Verbatim}
+\gr
+
+
+
+%\section{Εκτέλεση}
+%
+%
+%\gr
+%\section{Συμπεράσματα}
+%
+%
+%\gr
+%
+%

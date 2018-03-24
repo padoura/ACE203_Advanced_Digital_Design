@@ -1,0 +1,27 @@
+Running: D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/TestFA_isim_beh.exe -prj D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/TestFA_beh.prj work.TestFA 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/TestFA.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity XorGate [xorgate_default]
+Compiling architecture behavioral of entity AndGate [andgate_default]
+Compiling architecture structural of entity HalfAdder [halfadder_default]
+Compiling architecture behavioral of entity OrGate [orgate_default]
+Compiling architecture structural of entity FullAdder [fulladder_default]
+Compiling architecture behavior of entity testfa
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/TestFA_isim_beh.exe
+Fuse Memory Usage: 28648 KB
+Fuse CPU Usage: 420 ms

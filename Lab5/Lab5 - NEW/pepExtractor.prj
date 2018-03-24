@@ -1,0 +1,7 @@
+work	"AdderSubtractor.vhd"
+work	"CLA4.vhd"
+work	"CLA8.vhd"
+work	"CarryGP.vhd"
+work	"CarryLA.vhd"
+work	"FSM_Control_Add_Sub.vhd"
+work	"Sum.vhd"

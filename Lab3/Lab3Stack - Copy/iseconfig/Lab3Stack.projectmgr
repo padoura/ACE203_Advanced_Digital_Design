@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Lab3Stack" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/EqualComp5 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|EqualComp5.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural/compU - EqualComp7 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd/SSD - SSDCircuit - Structural/dataU - SSDData - Structural/muxU - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural/compU - EqualComp7 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/StackCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit.vhd</ClosedNode>
+         <ClosedNode>/StackCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit.vhd/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/StackCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit.vhd/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/sxhma D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|sxhma.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000101000000020000000000000000000000000200000064ffffffff000000810000000300000002000001010000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Lab3Top - Behavioral (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002f1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002250000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>MemoryStack.xco</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000197000000010000000100000000000000000000000064ffffffff000000810000000000000001000001970000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Counter5bit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Counter5bit_Test.vhd</ClosedNode>
+         <ClosedNode>/EqualComp5 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|EqualComp5.vhd</ClosedNode>
+         <ClosedNode>/EqualComp5_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|EqualComp5_Test.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|Lab3Top_Test.vhd</ClosedNode>
+         <ClosedNode>/MemoryStack_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|MemoryStack_Test.vhd</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural/compU - EqualComp7 - Structural/AndU - And8Gate - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/controlU - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit.vhd/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit_Test.vhd</ClosedNode>
+         <ClosedNode>/SSDCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit_Test.vhd/uut - SSDCircuit - Structural/controlU - SSDControl - Structural/compU - EqualComp7 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit_Test.vhd/uut - SSDCircuit - Structural/controlU - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/SSDCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDCircuit_Test.vhd/uut - SSDCircuit - Structural/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/SSDControl_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDControl_Test.vhd</ClosedNode>
+         <ClosedNode>/SSDControl_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDControl_Test.vhd/uut - SSDControl - Structural/compU - EqualComp7 - Structural</ClosedNode>
+         <ClosedNode>/SSDControl_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDControl_Test.vhd/uut - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/SSDData_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|SSDData_Test.vhd</ClosedNode>
+         <ClosedNode>/StackCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit.vhd</ClosedNode>
+         <ClosedNode>/StackCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit_Test.vhd</ClosedNode>
+         <ClosedNode>/StackCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit_Test.vhd/uut - StackCircuit - Structural</ClosedNode>
+         <ClosedNode>/StackCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit_Test.vhd/uut - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/StackCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit_Test.vhd/uut - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/StackCircuit_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|StackCircuit_Test.vhd/uut - StackCircuit - Structural/MemoryU - MemoryStack - MemoryStack_a</ClosedNode>
+         <ClosedNode>/mux16x1 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab3|Lab3Stack|mux16x1.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>StackCircuit_Test - behavior (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/StackCircuit_Test.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014d0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>StackCircuit_Test - behavior (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/StackCircuit_Test.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001550000013201000000040100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

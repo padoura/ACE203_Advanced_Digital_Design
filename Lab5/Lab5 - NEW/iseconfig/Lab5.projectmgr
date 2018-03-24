@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Lab5" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/AdderSubtractor - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|AdderSubtractor.vhd/CLA - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/CLA8 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLA8.vhd</ClosedNode>
+         <ClosedNode>/CLA8 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLA8.vhd/CLA4U0 - CLA4 - Structural</ClosedNode>
+         <ClosedNode>/CLAddSub8 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLA8.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/AdderSubtractorU - AdderSubtractor - Structural/CLA - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxSwapU - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU0 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU1 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/UnarySubtractorU - UnarySubtractor - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral C:|Users|Petros|Dropbox|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/SRegister2U - SRegister2 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/AdderSubtractorU - AdderSubtractor - Structural/CLA - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/AdderSubtractorU - AdderSubtractor - Structural/CLA - CLAddSub8 - Structural/CLA4U1 - CLA4 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxSwapU - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU0 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU0 - mux8x2 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU1 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU3 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/UnarySubtractorU - UnarySubtractor - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/UnarySubtractorU - UnarySubtractor - Structural/CLA - CLAddSub8 - Structural/CLA4U0 - CLA4 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/UnarySubtractorU - UnarySubtractor - Structural/CLA - CLAddSub8 - Structural/CLA4U1 - CLA4 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/SRegister2U - SRegister2 - Structural</ClosedNode>
+         <ClosedNode>/UnarySubtractor - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|UnarySubtractor.vhd</ClosedNode>
+         <ClosedNode>/mux8x2 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|mux8x2.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Add_SubU - FSM_Add_Sub - Behavioral (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab5/Lab5/FSM_Add_Sub.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000214000000020000000000000000000000000200000064ffffffff000000810000000300000002000002140000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Add_SubU - FSM_Add_Sub - Behavioral (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab5/Lab5/FSM_Add_Sub.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002f1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002250000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>CarryGP.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/AdderSubstractor_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|AdderSubstractor_Test.vhd</ClosedNode>
+         <ClosedNode>/AdderSubstractor_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|AdderSubstractor_Test.vhd/uut - AdderSubtractor - Structural</ClosedNode>
+         <ClosedNode>/AdderSubstractor_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|AdderSubstractor_Test.vhd/uut - AdderSubtractor - Structural/CLA - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/CLA8 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLA8.vhd</ClosedNode>
+         <ClosedNode>/CLAddSub8 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLA8.vhd</ClosedNode>
+         <ClosedNode>/CLAddSub8_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLAddSub8_Test.vhd</ClosedNode>
+         <ClosedNode>/CLAddSub8_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|CLAddSub8_Test.vhd/uut - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/SSD - SSDCircuit - Structural/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU0 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU1 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab3Top - Behavioral D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab3Top.vhd/Stack - StackCircuit - Structural/MemoryU - MemoryStack - MemoryStack_a</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural/compU - EqualComp7 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/SSD - SSDCircuit - Structural/controlU - SSDControl - Structural/muxU - mux16x4 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/SSD - SSDCircuit - Structural/dataU - SSDData - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/SSD - SSDCircuit - Structural/dataU - SSDData - Structural/muxU - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/Comp0 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/Comp31 - EqualComp5 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/AdderSubtractorU - AdderSubtractor - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/AdderSubtractorU - AdderSubtractor - Structural/CLA - CLAddSub8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxSwapU - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU0 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU1 - mux4x1 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/MuxU3 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/FSMTopU - FSMTop - Structural/UnarySubtractorU - UnarySubtractor - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/MemoryU - MemoryStack - MemoryStack_a</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/MuxU2 - mux32x8 - Structural</ClosedNode>
+         <ClosedNode>/Lab4_Test - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Lab4_Test.vhd/uut - Lab3Top - Behavioral/Stack - StackCircuit - Structural/SRegister2U - SRegister2 - Structural</ClosedNode>
+         <ClosedNode>/Or4Gate - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Or4Gate.vhd</ClosedNode>
+         <ClosedNode>/SSDCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|SSDCircuit.vhd</ClosedNode>
+         <ClosedNode>/StackCircuit - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|StackCircuit.vhd</ClosedNode>
+         <ClosedNode>/Test_CLA4 - behavior D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|Test_CLA4.vhd</ClosedNode>
+         <ClosedNode>/mux8x2 - Structural D:|Dropbox|ece|Spring_2017|Advanced Digital Design|Lab|Lab5|Lab5|mux8x2.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>counterU - Counter125K - Behavioral (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab5/Lab5/Counter125K.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000178000000020000000000000000000000000200000064ffffffff000000810000000300000002000001780000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>counterU - Counter125K - Behavioral (D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab5/Lab5/Counter125K.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000c90000009301000000040100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>CORE Generator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000185000000010000000100000000000000000000000064ffffffff000000810000000000000001000001850000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>CORE Generator</CurrentItem>
+   </ItemView>
+</Project>

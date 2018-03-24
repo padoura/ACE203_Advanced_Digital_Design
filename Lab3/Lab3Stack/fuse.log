@@ -1,0 +1,78 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab4_Test_isim_beh.exe" -prj "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab4_Test_beh.prj" "work.Lab4_Test" 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/AndGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/And4Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/XnorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux4x1.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/And8Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux32x8.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/mux16x4.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_UN_SWAP.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_Add_Sub.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMStack.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMssd.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/EqualComp7.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Decoder2to32.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Counter125K.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDData.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDControl.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/singlepulsegen.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSM_Mode.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/FSMTop.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/EqualComp5.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Counter5bit.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/StackCircuit.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/SSDCircuit.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab4_Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture structural of entity mux4x1 [mux4x1_default]
+Compiling architecture structural of entity mux16x4 [mux16x4_default]
+Compiling architecture behavioral of entity FSMssd [fsmssd_default]
+Compiling architecture behavioral of entity Counter125K [counter125k_default]
+Compiling architecture behavioral of entity XnorGate [xnorgate_default]
+Compiling architecture behavioral of entity AndGate [andgate_default]
+Compiling architecture structural of entity And4Gate [and4gate_default]
+Compiling architecture structural of entity And8Gate [and8gate_default]
+Compiling architecture structural of entity EqualComp7 [equalcomp7_default]
+Compiling architecture structural of entity SSDControl [ssdcontrol_default]
+Compiling architecture behavioral of entity Decoder4to32 [decoder4to32_default]
+Compiling architecture structural of entity mux32x8 [mux32x8_default]
+Compiling architecture structural of entity SSDData [ssddata_default]
+Compiling architecture structural of entity SSDCircuit [ssdcircuit_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity singlepulsegen [singlepulsegen_default]
+Compiling architecture behavioral of entity FSMStack [fsmstack_default]
+Compiling architecture behavioral of entity FSM_Un_Swap [fsm_un_swap_default]
+Compiling architecture behavioral of entity FSM_Add_Sub [fsm_add_sub_default]
+Compiling architecture structural of entity FSMTop [fsmtop_default]
+Compiling architecture behavioral of entity FSM_Mode [fsm_mode_default]
+Compiling architecture structural of entity EqualComp5 [equalcomp5_default]
+Compiling architecture behavioral of entity Counter5bit [counter5bit_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V6_3_output_stage [\BLK_MEM_GEN_V6_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V6_3_softecc_output_reg_stage [\BLK_MEM_GEN_V6_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V6_3_mem_module [\BLK_MEM_GEN_V6_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V6_3 [\BLK_MEM_GEN_V6_3("blk_mem_gen_v...]
+Compiling architecture memorystack_a of entity MemoryStack [memorystack_default]
+Compiling architecture structural of entity StackCircuit [stackcircuit_default]
+Compiling architecture behavioral of entity Lab3Top [lab3top_default]
+Compiling architecture behavior of entity lab4_test
+Time Resolution for simulation is 1ps.
+Waiting for 27 sub-compilation(s) to finish...
+Compiled 68 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab4_Test_isim_beh.exe
+Fuse Memory Usage: 39668 KB
+Fuse CPU Usage: 1169 ms

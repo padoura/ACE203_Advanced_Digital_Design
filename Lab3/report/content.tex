@@ -1,0 +1,202 @@
+\section{Σκοπός Εργαστηριακής Άσκησης}
+
+Με την τρίτη εργαστηριακή άσκηση ξεκινά ο δεύτερος κύκλος εργαστηριακών ασκήσεων του μαθήματος, όπου στόχος είναι η σταδιακή σχεδίαση μίας απλής αριθμομηχανής. Στο παρόν μέρος της άσκησης πραγματοποιείται το πρώτο βήμα υλοποίησής της, με το σχεδιασμό σε \en VHDL \gr τόσο της βασικής λειτουργικότητας μίας \en post-increment, pre-decrement \gr στοίβας ως μνήμη, όσο και της βασικής διεπαφής με τα \en Seven Segment Displays (SSD) \gr του \en Basys 2. \gr Για την κατασκευή τους καλούμαστε να χρησιμοποιήσουμε με ιεραρχικό τρόπο δομικές μονάδες, ορισμένες με τη σειρά τους με όλους τους τρόπους που μάθαμε στα προηγούμενα εργαστήρια (με \en behavioural \gr και \en structural design). \gr Συνεπώς, σε αυτό το εργαστήριο επιτυγχάνεται τόσο η βαθύτερη κατανόηση της ιεραρχικής σχεδίασης σε \en VHDL, \gr όσο και της χρήσης κυκλωμάτων \en stack memory \gr και \en SSD. \gr
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.7\textwidth, angle =0, trim = 45mm 80mm 110mm 50mm,clip=true]{images/ALL.pdf}}
+\caption{Το πλήρες κύκλωμα στο ανώτατο ιεραρχικό επίπεδο. Το Σχήμα \ref{fig:SSD} απείκονιζει σε κατώτερο επίπεδο το \en SSDCircuit, \gr ενώ το Σχήμα \ref{fig:Stack} απεικονίζει το \en StackCircuit.}
+\label{fig:top}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.9\textwidth, angle =0, trim = 12mm 65mm 75mm 22mm,clip=true]{images/SSD.pdf}}
+\caption{Το κύκλωμα επικοινωνίας \en (SSDCircuit) \gr της στοίβας με τα \en SSD. \gr Η αριστερή στήλη περιέχει το \en control path \gr ενώ η δεξιά το \en data path.}
+\label{fig:SSD}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 2mm 40mm 47mm 6mm,clip=true]{images/STACK.pdf}}
+\caption{Το κύκλωμα \en (StackCircuit) \gr υλοποίησης της στοίβας. Στο κύκλωμα περιλαμβάνονται και τα κυκλώματα παλμών εισόδου \en (singlepulsegen) \gr και η \en block RAM (MemoryStack). \gr Το διάγραμμα καταστάσεων της \en FSMStack \gr δίνεται στο Σχήμα \ref{fig:fsmstack}.}
+\label{fig:Stack}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.35\textwidth, angle =-90, trim = 25mm 25mm 25mm 50mm,clip=true]{images/FSM_STACK.pdf}}
+\caption{Η μηχανή πεπερασμένων καταστάσεων που ελέγχει την στοίβα. Όλες οι περιπτώσεις εισόδου που δεν καταγράφονται ρητώς οδηγούν σε διατήρηση της κατάστασης. Tο πρώτο \en bit \gr εξόδου της \en FSM \gr επιτρέπει ή όχι το \en PUSH, \gr και αντίστοιχα το δεύτερο \en bit \gr το \en POP.}
+\label{fig:fsmstack}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.35\textwidth, angle =-90, trim = 25mm 25mm 25mm 50mm,clip=true]{images/FSM_SSD.pdf}}
+\caption{Η μηχανή πεπερασμένων καταστάσεων που ελέγχει την απεικόνιση στα \en SSD. \gr Όλες οι περιπτώσεις εισόδου που δεν καταγράφονται ρητώς οδηγούν σε διατήρηση της κατάστασης.}
+\label{fig:fsmssd}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=1\textwidth, angle =0, trim = 30mm 140mm 30mm 25mm,clip=true]{images/Memory.pdf}}
+\caption{Η μνήμη για την υλοποίηση της ουράς. Απεικονίζονται οι θέσεις των \en Top Of Stack \gr και \en Top Of Stack -1 \gr στην κατάσταση \en OVF \gr (A), \en FULL \gr (B), \en NONE \gr (Γ, παράδειγμα για 29 αποθηκευμένους ακεραίους), και \en EMPTY \gr (Δ).}
+\label{fig:memory}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+
+\section{Προεργασία-Περιγραφή}
+
+Στα ζητούμενα της προεργασίας, εκτός από τον κώδικα \en VHDL, \gr περιλαμβάνονταν το \en block diagram \gr της δική μας σχεδίασης, τα διαγράμματα καταστάσεων των \en FSM \gr που χρησιμοποιήθηκαν, και το σχήμα της \en stack memory. \gr Στη συνέχεια αυτής της ενότητας προχωράμε σε μία \en top-down \gr παρουσίαση του κυκλώματός μας.
+
+Ξεκινώντας με το Σχήμα \ref{fig:top}, παρουσιάζουμε το ανώτατο ιεραρχικά επίπεδο της σχεδίασής μας. Σε αυτό φαίνεται ο σαφής διαχωρισμός του κυκλώματός μας σε δύο μέρη, σε άμεση αντιστοίχιση των μερών που περιγράψαμε στην εισαγωγή: 1) Στο \en StackCircuit \gr (διατηρώντας τα ονόματα που χρησιμοποιήσαμε στη \en VHDL) \gr  υλοποιείται όλη η λειτουργικότητα της στοίβας. Όλες οι είσοδοι συνδέονται με αυτό το \en module, \gr ενώ η έξοδος \en Num$\_$Out \gr της μνήμης συνδέεται απευθείας με τα \en LEDs. \gr 2) Το \en SSDCircuit module \gr μεσολαβεί μεταξύ του \en StackCircuit \gr και των \en SSDs, \gr χρησιμοποιώντας δηλαδή την έξοδο της \en FSM \gr που ελέγχει την κατάσταση της στοίβας για να ελέγξει την πληροφορία που θα απεικονιστεί στα \en SSDs. \gr
+
+
+
+\en
+\subsection{Stack module}
+\gr
+Στο Σχήμα \ref{fig:Stack} παρουσιάζουμε αναλυτικότερα το κύκλωμα που υλοποιεί τη στοίβα. Τα κουμπιά εισόδου \en (PUSH, POP) \gr συνδέονται με κυκλώματα  \en singlepulsegen, \gr τα οποία μας δόθηκαν στο προηγούμενο εργαστήριο και είναι υπεύθυνα για την μετατροπή των αντίστοιχων σημάτων εισόδου σε παλμούς \en (PushPulse, PopPulse) \gr διάρκειας ενός κύκλου ρολογιού. Το υποκύκλωμα περιέχει δύο \en 5-bit \gr μετρητές (συμπεριφορική υλοποίηση, Παράρτημα \ref{counter}), έναν που δείχνει στο \en top of stack (TOS) \gr και έναν που δείχνει στην αμέσως προηγούμενη θέση \en (top of stack -1, TOSm1). \gr Επιπλέον χρησιμοποιήσαμε το εργαλείο \en Core Generator \gr για τη δημιουργία \en block memory \gr πλάτους \en 8-bit \gr και βάθους 32 θέσεων (Σχήμα \ref{fig:memory}), ώστε συνολικά να  αποθηκεύονται έως 31 ακέραιοι. 
+
+Για τον έλεγχο των ζητούμενων λειτουργιών της στοίβας χρησιμοποιήσαμε μια \en FSM \gr τεσσάρων καταστάσεων που αντιστοιχούν και στις τέσσερις αντίστοιχες απεικονίσεις των \en SSDs \gr (Σχήμα \ref{fig:fsmstack} ). Οι μεταβάσεις ελέγχονται από τα σήματα \en PushPulse, PopPulse \gr και από την έξοδο συγκριτών που ελέγχουν το πότε ο \en TOS \gr θα φτάσει τις τιμές 0 ή 31. Οι μετρητές, με τη σειρά τους, μετρούν ένα βήμα κατά πάνω ή κατά κάτω σύμφωνα με τα \en PushPulse, PopPulse \gr αντίστοιχα, αλλά μόνο όταν η \en 2-bit \gr έξοδος της  \en FSM \gr το επιτρέπει. Τελικά, η \en block memory \gr δίνει την έξοδό του στα \en LEDs, \gr ενώ η \en FSM \gr με την έξοδό της ελέγχει επίσης το τι θα δοθεί στο υποκύκλωμα των \en SSDs \gr για απεικόνιση.
+
+
+
+
+
+\en
+\subsection{SSD module}
+\gr
+Στο Σχήμα \ref{fig:SSD} απεικονίζεται το \en SSDCircuit module. \gr Το υποκύκλωμα αυτό αποτελείται από δύο \en modules \gr που αντιστοιχούν στο \en control \gr και \en data path. \gr 
+
+Το \en control path \gr περιέχει ένα μετρητή, ο οποίος μετράει έως το 125000. Επιπλέον περιέχει μια \en FSM \gr (Σχήμα \ref{fig:fsmssd}) που καθορίζει (μέσω ενός πολυπλέκτη \en 16x4) \gr το \en SSD \gr που θα λειτουργεί κάθε στιγμή. Ο έλεγχος της \en FSM \gr από τον παραπάνω μετρητή επιτρέπει την απεικόνιση συχνότητας 100 \en Hz \gr (με βάση το ρολόι του \en Basys 2, 50 MHz). \gr  
+
+Από την άλλη πλευρά το \en data path \gr περιέχει έναν αποκωδικοποιητή \en 2 to 32 \gr (συμπεριφορική σχεδίαση, Παράρτημα \ref{decoder}), ο οποίος σύμφωνα με την έξοδο της \en FSMstack \gr παράγει το αντίστοιχο σήμα της κοινής καθόδου. Μιας και η κάθοδος για τα \en SSDs \gr είναι κοινή, στην έξοδο του αποκωδικοποιητή χρειάζεται ένας πολυπλέκτης 32\en x8 \gr (υλοποιήθηκε ιεραρχικά από πολυπλέκτες 2\en x\gr1, παράδειγμα Παράρτημα \ref{mux}), ο οποίος και ελέγχεται από το \en control path. \gr
+
+\section{Κυματομορφέ{ς}-Προσομοίωση}
+
+Μετά την υλοποίηση των παραπάνω κυκλωμάτων, προχωρήσαμε στη δημιουργία κώδικα \en test bench \gr για τον έλεγχο της ορθής λειτουργίας τόσο εξ' ολοκλήρου, όσο και τμήματος του κυκλώματος. Για οικονομία χώρου, στην παρούσα αναφορά παρουσιάζουμε τρεις περιπτώσεις κυματομορφών για τις καταστάσεις \en empty, full, ovf. \gr
+
+Ειδικότερα, στο Σχήμα \ref{fig:waveforms}-κάτω βλέπουμε την αρχική συμπεριφορά του κυκλώματος μετά το πάτημα του \en reset. \gr Η στοίβα ξεκινά στην κατάσταση \en empty, \gr με τον ερχομό παλμού \en push \gr περνά στην κατάσταση \en none, \gr ενώ με ένα \en pop \gr ξαναεπαναφέρεται σε \en empty \gr και εμφανίζεται στα \en LEDs \gr η τιμή που δόθηκε στην πρώτη θέση της μνήμης. 
+
+Στο Σχήμα \ref{fig:waveforms}-πάνω-αριστερά παρουσιάζεται η περίπτωση της υπερχείλισης. Τη στιγμή που δίνουμε το 32ο \en push, \gr η τιμή 33 δεν εγγράφεται στη μνήμη, και το κύκλωμα πλέον δεν αντιδρά (κατάσταση \en ovf) \gr σε οτιδήποτε μέχρι να δοθεί \en reset \gr και η μνήμη να αδειάσει (στην πράξη δεν διαγράφουμε τις προηγούμενες τιμές, αλλά τις πανωγράφουμε στη συνέχεια). Τέλος, στο Σχήμα \ref{fig:waveforms}-πάνω-δεξιά δείχνουμε την περίπτωση διαβάσματος τιμών από την μνήμη, έχοντας φτάσει στην κατάσταση \en full. \gr
+
+\begin{figure}
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{images/ovf.pdf}
+    \end{subfigure}%
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{images/full.pdf}
+    \end{subfigure}
+     \begin{subfigure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{images/empty.pdf}
+    \end{subfigure}
+	\caption{Τμήματα του διαγράμματος χρονισμού προσομοίωσης της λειτουργίας του κυκλώματος. Πάνω αριστερά: Γέμισμα μνήμης και υπερχείλιση. Πάνω δεξιά: Γέμισμα μνήμης και ανάκτηση από τη μνήμη. Κάτω: Έναρξη άδειας μνήμης.}
+	\label{fig:waveforms}
+\end{figure}
+
+
+
+
+\section{Συμπεράσματα}
+ Η τρίτη εργαστηριακή άσκηση αποτέλεσε το πρώτο βήμα για τη δημιουργία μιας απλής αριθμομηχανής. Πιο συγκεκριμένα: 1) εξασκηθήκαμε στη δημιουργία κυκλώματος ελέγχου της λειτουργίας \en SSDs \gr και 2) στην ιεραρχική υλοποίηση μιας στοίβας. Αν και το κύκλωμά μας είναι σχεδιαστικά σωστό και λειτούργησε σωστά στην \en FPGA, \gr θα μπορούσαμε να μειώσουμε τις καταστάσεις της \en FSMstack \gr από τέσσερις σε δύο (για \en push, pop, \gr φυσικά με επιπλέον \en module \gr με λογική για τις λειτουργίες \en empty, full, ovf). \gr Επιπλέον, θα μπορούσαμε να κρατάμε στην κατάσταση \en empty \gr τον \en TOSm1 \gr στη θέση 0, και να ελέγχουμε ξεχωριστά από τα \en seven segments \gr το \en DP, \gr αλλά για την παρούσα άσκηση αυτές οι αλλαγές δεν θα είχαν κάποια επίδραση.
+
+
+\section{Παράρτημα - Κώδικας \latintext VHDL}
+\subsection{\latintext 5-bit Counter}
+\label{counter}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of Counter5bit is
+signal count : STD_LOGIC_VECTOR (4 downto 0);
+begin
+process (Clk, En, LD, UpDn, InVec)
+	begin
+		if LD = '0' then count <= InVec; -- load
+		elsif En = '1' then -- check enable
+			if rising_edge(Clk) then 
+				if UpDn = '1' then count <= 
+				  std_logic_vector (unsigned(count) + 1); -- increment register
+				else count <= 
+				  std_logic_vector (unsigned(count) - 1); -- decrement register
+				end if;
+			end if;
+		end if;
+end process;
+		
+process (count, UpDn)
+	begin
+		Q <= count;
+		if ( (count = "11111") and (UpDn = '1') ) 
+		  or ( (count = "00000") and (UpDn = '0') ) then RC <= '1';
+		else RC <= '0';
+		end if;
+end process;
+end Behavioral;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext Decoder2to32}
+\label{decoder}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of Decoder2to32 is
+begin
+	with InState select
+		OutVec <= X"FF038371" when "00", -- printing OVF: F = X"71", V = X"83", O = X"03"
+			  X"FFFFFF71" when "01", -- printing F
+			  X"FFFFFF61" when "10", -- printing E: E = X"61"
+			  X"FFFFFFFF" when others; -- printing NONE
+end Behavioral;
+\end{Verbatim}
+\gr
+
+
+\subsection{\latintext Mux32x8}
+\label{mux}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Structural of mux32x8 is
+	component mux4x1  is
+		Port (	InVec : in  STD_LOGIC_VECTOR (3 downto 0);
+				SelVec : in  STD_LOGIC_VECTOR (1 downto 0);
+				Out0 : out  STD_LOGIC);
+	end component;
+	begin
+		Loop1 : For i in 0 to 7 generate		
+			mux0 : mux4x1 Port Map (InVec(0) => InVec(i),
+						InVec(1) => InVec(i+8),
+						InVec(2) => InVec(i+16),
+						InVec(3) => InVec(i+24),
+						SelVec => SelVec,
+						Out0 => OutVec(i));
+		end generate;
+end Structural;
+\end{Verbatim}
+\gr

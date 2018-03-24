@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
+# Start of session at: Mon Mar 13 20:54:10 2017
+# Process ID: 124
+# Log file: D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/planAhead_run_1/planAhead.log
+# Journal file: D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/pa.fromNetlist.tcl}
+exit
+stop_gui

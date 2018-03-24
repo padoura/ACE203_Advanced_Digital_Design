@@ -1,0 +1,6 @@
+vhdl isim_temp "AndGate.vhd"
+vhdl isim_temp "And4Gate.vhd"
+vhdl isim_temp "XnorGate.vhd"
+vhdl isim_temp "And8Gate.vhd"
+vhdl isim_temp "EqualComp5.vhd"
+vhdl isim_temp "EqualComp5_Test.vhd"

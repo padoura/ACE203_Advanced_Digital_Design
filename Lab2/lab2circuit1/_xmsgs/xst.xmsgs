@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit1\xst\work\xil_6360_12&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit1\xst\work\xil_6360_15&quot; will remain.  System error message is:  File exists
+</msg>
+
+</messages>
+

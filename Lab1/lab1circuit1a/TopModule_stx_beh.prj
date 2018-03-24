@@ -1,0 +1,6 @@
+vhdl isim_temp "XorGate.vhd"
+vhdl isim_temp "NotGate.vhd"
+vhdl isim_temp "NorGate.vhd"
+vhdl isim_temp "AndGate.vhd"
+vhdl isim_temp "Lab1Circuit1.vhd"
+vhdl isim_temp "TopModule.vhd"

@@ -1,0 +1,444 @@
+\section{Σκοπός Εργαστηριακής Άσκησης}
+
+H δεύτερη εργαστηριακή άσκηση συνεχίζει την εξοικείωση των φοιτητών στη γλώσσα \en VHDL, \gr με το σχεδιασμό δομικών μονάδων με \en behavioral \gr τρόπο και την μετέπειτα χρήση τους για την ιεραρχική σχεδίαση μεγαλύτερων κυκλωμάτων. Για το σκοπό αυτό η άσκηση ζητά την υλοποίηση δύο κυκλωμάτων: 1) ενός \en 4-bit \gr αθροιστή \en Carry Look Ahead (CLA), \gr ο οποίος αποτελεί ένα πρώτο παράδειγμα \en top-down \gr ανάλυσης κυκλώματος και στη συνέχεια \en bottom-up \gr υλοποίησής του με μικρότερες δομικές μονάδες, και 2) μιας μηχανής πεπερασμένων καταστάσεων, η οποία και αποτελεί χαρακτηριστικό παράδειγμα χρήσης του ρολογιού, των \en processes \gr και \en case statements \gr για σύγχρονα ακολουθιακά κυκλώματα.
+
+
+\section{Προεργασία-Περιγραφή}
+
+Η προεργασία της παρούσας άσκησης αφορούσε μόνο την συγγραφή του αντίστοιχου κώδικα σε \en VHDL, \gr καθώς η ανάλυση και σχεδίαση των κυκλωμάτων με τα αντίστοιχα \en block diagrams \gr έχουν ήδη δοθεί από την εκφώνηση της άσκησης.
+
+\subsection{\latintext 4-bit CLA}
+
+Στο Παράρτημα \ref{CLA} παρουσιάζουμε τον \en top module \gr κώδικα του \en CLA. \gr Σε αυτόν φαίνεται ξεκάθαρα η ιεραρχική σχεδίασή του με \en units \gr τριών ειδών: τα \en Carry Generate-Propagate (CarryGP), Carry Look Ahead (CarryLA), Sum. \gr Ειδικά στην υλοποίησή μας, αντί για μία \en 4-bit \gr μονάδα \en CarryGP \gr και \en Sum, \gr στο \en top module \gr χρησιμοποιήσαμε τέσσερα αντίγραφα των \en Sum \gr και \en CarryGP, \gr ένα για κάθε \en bit. \gr Εναλλακτικά θα μπορούσαμε τα \en for-generate statements \gr να τα χρησιμοποιήσουμε σε κατώτερο ιεραρχικά επίπεδα (δηλαδή σε άλλο αρχείο), όπου δηλαδή θα ορίζαμε τις αντίστοιχες \en 4-bit \gr μονάδες και να χρησιμοποιήσουμε αυτές στο \en top module, \gr χωρίς όμως να άλλαζε κάτι στη λειτουργία του τελικού μας κυκλώματος.
+
+Περιγράφοντας τώρα τη λειτουργία του \en CLA, \gr τα \en CarryGP \gr (Παράρτημα \ref{CarryGP}) είναι υπεύθυνα για τον έλεγχο (και παραγωγή των αντίστοιχων σημάτων) δημιουργίας κρατουμένου στο εκάστοτε \en bit \gr ή διάδοσης κρατουμένου που δημιουργήθηκε σε προηγούμενο \en bit. \gr Με τη σειρά του, το \en CarryLA \gr (Παράρτημα \ref{CarryLA}), έχοντας ως είσοδο τα \en generate \gr και \en propagate \gr σήματα των \en CarryGP \gr και του κρατούμενου εισόδου, υπολογίζει ταυτόχρονα τα κρατούμενα της πρόσθεσης σε κάθε \en bit. \gr Με βάση τα κρατούμενα και τους τελεστέους, γίνεται ο τελικός υπολογισμός του αθροίσματος σε κάθε \en bit \gr από τις μονάδες \en Sum \gr (Παράρτημα \ref{Sum}).
+
+Ως υποσημείωση να τονίσουμε ότι για επιπλέον εξάσκηση στη \en VHDL, \gr υλοποιήσαμε τις υπομονάδες του \en CLA \gr τόσο με \en behavioural \gr όσο και με \en structural \gr αρχιτεκτονική. Για χάριν συντομίας, εδώ παραθέτουμε μόνο το \en CarryLA unit \gr με ιεραρχική περιγραφή (Παράρτημα \ref{structural}), όπου χρησιμοποιήθηκαν πύλες \en AND \gr και \en OR \gr πολλαπλών εισόδων, οι οποίες και αυτές με τη σειρά τους είχαν υλοποιηθεί ιεραρχικά από πύλες δύο εισόδων χρησιμοποιώντας δενδρική τοπολογία \en (tree topology). \gr
+ 
+\subsection{\latintext FSM}
+
+Στο Παράρτημα \ref{FSM} παραθέτουμε τον \en behavioral \gr κώδικα της ζητούμενης \en Moore FSM \gr τριών καταστάσεων. Στο \en case statement \gr φαίνονται ποιες είναι οι μεταβάσεις από το τωρινό \en (currentS) \gr στο επόμενο \en (nextS) state, \gr ανάλογα με το ποιο \en button \gr από τα τρία της εισόδου είναι πατημένο (σήμα στο 1). Σε κάθε \en when \gr επιπροσθέτως ορίζουμε και την έξοδο που στη συγκεκριμένη άσκηση αντιστοιχεί στα \en 8 leds \gr του \en basys 2. \gr Τέλος, ορίζουμε ότι η \en FSM \gr εκκινεί από την κατάσταση Α (κάτι που εξασφαλίζει και το \en when others), \gr ενώ σε περίπτωση μη πατήματος κουμπιού (όπως και για το κουμπί 2) θεωρούμε ότι δεν αλλάζει κατάσταση.
+
+\grΌπως ζητήθηκε κατά την εκτέλεση της άσκησης, αυτή η \en FSM \gr έγινε \en instantiate \gr και συνδέθηκε \gr σε \en top module \gr (Παράρτημα \ref{FSMtop}) με μία γεννήτρια παλμών διάρκειας ενός κύκλου (στην ουσία και αυτή μία \en FSM), \gr η οποία και μεσολαβούσε μεταξύ εισόδων (κουμπιών) και \en FSM \gr για την αποφυγή εισαγωγής σήματος διάρκειας πολλών κύκλων στην \en FSM \gr (λόγω φυσικών περιορισμών του πατήματος κουμπιών απέναντι στη μεγάλη συχνότητα ρολογιού).
+
+
+
+\section{Κυματομορφέ{ς}-Προσομοίωση}
+
+Μετά την υλοποίηση των παραπάνω κυκλωμάτων, προχωρήσαμε στη δημιουργία κώδικα \en test bench \gr για τον έλεγχο της ορθής λειτουργίας τους μέσω προσομοίωσης. Και στις δύο περιπτώσεις η προσομοίωση παρήγαγε τα αναμενόμενα αποτελέσματα.
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/CLA.pdf}}
+\caption{Τμήμα του διαγράμματος χρονισμού προσομοίωσης της λειτουργίας του \en CLA \gr για όλες τις πιθανές περιπτώσεις.}
+\label{fig:CLA}
+% Place the label just after the caption to make the link work
+\end{figure} % table makes a floating object with a title
+
+Ειδικότερα, στο Σχήμα \ref{fig:CLA} παραθέτουμε την κυματομορφή της προσομοίωσης του \en CLA. \gr Στη συγκεκριμένη προσομοίωση καλύψαμε όλες τις δυνατές περιπτώσεις πρόσθεσης με ένα \en for loop, \gr όπως φαίνεται και από το αντίστοιχο \en process \gr του \en test bench \gr (Παράρτημα \ref{test}). Στα κυκλωμένα παραδείγματα (από δεξιά προς τα αριστερά) φαίνονται τα αποτελέσματα των προσθέσεων 0001+0001 = 0010 με μηδενικό κρατούμενο εξόδου και 0101+1101=0010 με κρατούμενο εξόδου 1.
+
+Στο Σχήμα \ref{fig:FSM} παρουσιάζουμε αντίστοιχα τα αποτελέσματα της προσομοίωσης της \en FSM. \gr Περιγράφοντας τα κυκλωμένα σημεία με χρονική σειρά, βλέπουμε ότι το πάτημα του πρώτου \en button \gr δημιουργεί ένα παλμό εισόδου (τελευταίο διάνυσμα \en invec) \gr στην επόμενη θετική ακμή του ρολογιού (και όχι νωρίτερα). Με τη σειρά του ο παλμός εισόδου διαρκεί αναμενόμενα ένα κύκλο ρολογιού και οδηγεί σε αλλαγή κατάστασης (από Α σε Β, με τα μεσαία \en leds \gr να σβήνουν) στην αμέσως επόμενη θετική ακμή. Παρόμοια λειτουργούν και τα υπόλοιπα κουμπιά, με το τρίτο να μην επηρεάζει την κατάσταση της \en FSM \gr και το δεύτερο να κάνει τη μεταβολή από \en C \gr σε Β (όπου αλλάζουν όλα τα \en leds). \gr Τέλος βλέπουμε και τη λειτουργία του \en Reset \gr που οδηγεί στην κατάσταση Α ανεξαρτήτως κατάστασης ή άλλων εισόδων.
+
+
+
+\begin{figure}[htpb]
+\centering
+\makebox[\textwidth]{%
+\includegraphics[width=0.95\textwidth, angle =0, trim = 0mm 0mm 0mm 0mm,clip=true]{images/FSM.pdf}}
+% Place the label just after the caption to make the link work
+\caption{Διάγραμμα χρονισμού προσομοίωσης της λειτουργίας της \en FSM \gr για τις περιπτώσεις πατήματος του \en Button 1 (\gr πρώτο σήμα \en InVec(0)), Button 3 (InVec(2)), Button 2 (InVec(1)), Reset \gr (κυκλωμένες από αριστερά προς δεξιά).}
+\label{fig:FSM}
+\end{figure} % table makes a floating object with a title
+
+
+
+\section{Συμπεράσματα}
+
+Στηριζόμενη ξανά σε απλά παραδείγματα κυκλωμάτων, η δεύτερη εργαστηριακή άσκηση μας προσέφερε την ευκαιρία να εξασκηθούμε στα εξής: 1) Στη χρήση ιεραρχικής σχεδίασης με \en top down \gr ανάλυση λειτουργίας και \en bottom up \gr υλοποίηση, όπου μικρότερες μονάδες δομούνται σε κατώτερο ιεραρχικά επίπεδο και ενώνονται σε ανώτερο για να συνθέσουν ένα μεγαλύτερο κύκλωμα. 2) Στη χρήση τόσο \en behavioral \gr όσο και \en structural \gr αρχιτεκτονικών. 3) Στην υλοποίηση σύγχρονων ακολουθιακών κυκλωμάτων (με ρολόι), και συγκεκριμένα \en FSM \gr με συμπεριφορικό μοντέλο. 4) Στην περαιτέρω εξοικείωση με τη σύνταξη \en case statements \gr και \en processes \gr στη \en VHDL. \gr
+
+
+\section{Παράρτημα - Κώδικας \latintext VHDL}
+\subsection{\latintext 4-bit CLA}
+\label{CLA}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+entity CLA4 is
+    Port ( A : in  STD_LOGIC_VECTOR (3 downto 0);
+           B : in  STD_LOGIC_VECTOR (3 downto 0);
+           Cin : in  STD_LOGIC;
+           S : out  STD_LOGIC_VECTOR (3 downto 0);
+           C_3 : out  STD_LOGIC);
+end CLA4;
+architecture Structural of CLA4 is
+	component CarryGP is
+    Port ( A : in  STD_LOGIC;
+           B : in  STD_LOGIC;
+           P : out  STD_LOGIC;
+           G : out  STD_LOGIC);
+	end component;	
+	component Sum is
+    Port ( A : in  STD_LOGIC;
+           B : in  STD_LOGIC;
+           C : in  STD_LOGIC;
+           S : out  STD_LOGIC);
+	end component;	
+	component CarryLA is
+    Port ( C : out  STD_LOGIC_VECTOR (3 downto 0);
+           Cin : in  STD_LOGIC;
+           P : in  STD_LOGIC_VECTOR (3 downto 0);
+           G : in  STD_LOGIC_VECTOR (3 downto 0));
+	end component;
+	signal P, G	: STD_LOGIC_VECTOR (3 downto 0);
+	signal C		: STD_LOGIC_VECTOR (2 downto 0);
+	begin
+		CGPULoop : For j in 0 to 3 generate
+			CGPU: CarryGP Port Map (A => A(j),
+						B => B(j),
+						P => P(j),
+						G => G(j));
+		end generate;
+		CLAU: CarryLA Port Map 	(Cin => Cin,
+							P => P,
+							G => G,
+							C(0) => C(0),
+							C(1) => C(1),
+							C(2) => C(2),
+							C(3) => C_3);									
+		SumULoop : For j in 1 to 3 generate
+			SumU: Sum Port Map     (A => A(j),
+						B => B(j),
+						C => C(j-1),
+						S => S(j));
+		end generate;
+		SumU0: Sum Port Map		    (A => A(0),
+							B => B(0),
+							C => Cin,
+							S => S(0));
+end Structural;
+\end{Verbatim}
+\gr
+
+
+\subsection{\latintext Carry Generate - Propagate Unit}
+\label{CarryGP}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of CarryGP is
+	begin
+		P <= A xor B;
+		G <= A and B;
+end Behavioral;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext Carry Look Ahead Unit - Behavioral Example}
+\label{CarryLA}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of CarryLA is
+	begin
+		C(0) <= G(0) or ( P(0) and Cin );
+		C(1) <= G(1) or (P(1) and G(0)) or ( P(1) and P(0) and Cin);
+		C(2) <= G(2) or (P(2) and G(1)) or ( P(2) and P(1) and G(0)) or 
+			( P(2) and P(1) and P(0) and Cin);
+		C(3) <= G(3) or (P(3) and G(2)) or ( P(3) and P(2) and G(1)) or
+			(P(3) and P(2) and P(1) and G(0)) or 
+			( P(3) and P(2) and P(1) and P(0) and Cin);
+end Behavioral;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext Sum Unit}
+\label{Sum}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of Sum is
+	begin
+		S <= A xor B xor C;
+end Behavioral;
+\end{Verbatim}
+\gr
+
+
+
+\subsection{\latintext Carry Look Ahead Unit - Structural Example (Bonus)}
+\label{structural}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Structural of CarryLA is
+	component OrGate is
+		 Port ( In0 : in  STD_LOGIC;
+				  In1 : in  STD_LOGIC;
+				  Out0 : out  STD_LOGIC);
+	end component;
+	component AndGate is
+    Port ( In0 : in  STD_LOGIC;
+           In1 : in  STD_LOGIC;
+           Out0 : out  STD_LOGIC);
+	end component;
+	component Or3Gate is
+		 Port ( In0 : in  STD_LOGIC;
+				  In1 : in  STD_LOGIC;
+				  In2 : in  STD_LOGIC;
+				  Out0 : out  STD_LOGIC);
+	end component;
+	component And3Gate is
+    Port ( In0 : in  STD_LOGIC;
+           In1 : in  STD_LOGIC;
+			  In2 : in  STD_LOGIC;
+           Out0 : out  STD_LOGIC);
+	end component;
+	component Or4Gate is
+		 Port ( InVec : in  STD_LOGIC_VECTOR (3 downto 0);
+				  Out0 : out  STD_LOGIC);
+	end component;
+	component And4Gate is
+    Port ( InVec : in  STD_LOGIC_VECTOR (3 downto 0);
+           Out0 : out  STD_LOGIC);
+	end component;
+	component Or5Gate is
+		 Port ( InVec : in  STD_LOGIC_VECTOR (4 downto 0);
+				  Out0 : out  STD_LOGIC);
+	end component;	
+	component And5Gate is
+    Port ( InVec : in  STD_LOGIC_VECTOR (4 downto 0);
+           Out0 : out  STD_LOGIC);
+	end component;	
+	signal Ponce : STD_LOGIC_VECTOR (3 downto 0);
+	signal Ptwice : STD_LOGIC_VECTOR (2 downto 0);
+	signal Pthree : STD_LOGIC_VECTOR (1 downto 0);
+	signal Pfour : STD_LOGIC;
+	begin
+	-- All 2-input AND gates
+	AndULoop : For j in 1 to 3 generate
+		AndU1: AndGate Port Map (	In0 => P(j),
+							In1 => G(j-1),
+							Out0 => Ponce(j)); -- Propagate once
+	end generate;
+	AndU0: AndGate Port Map (	In0 => P(0),
+						In1 => Cin,
+						Out0 => Ponce(0));									
+	-- All 3-input AND gates
+	And3ULoop : For j in 2 to 3 generate
+		And3U1: And3Gate Port Map (	In0 => P(j),
+							In1 => P(j-1),
+							In2 => G(j-2),
+							Out0 => Ptwice(j-1));
+	end generate;
+	And3U0: And3Gate Port Map (	In0 => P(1),
+						In1 => P(0),
+						In2 => Cin,
+						Out0 => Ptwice(0));						
+	-- All 4-input AND gates
+	And4U1: And4Gate Port Map (	InVec(0 to 2) => P(1 to 3),
+						InVec(3) => G(0),
+						Out0 => Pthree(1));
+	And4U0: And4Gate Port Map (	InVec(0 to 2) => P(0 to 2),
+						InVec(3) => Cin,
+						Out0 => Pthree(0));					
+	-- 5-input AND gate
+	And5U: And5Gate Port Map (	InVec(0 to 3) => P,
+					InVec(4) => Cin,
+					Out0 => Pfour);						
+	-- C_0 calculation
+	OrU:	OrGate 	Port Map (In0 => Ponce(0),
+						In1 => G(0),
+						Out0 => C(0));						
+	-- C_1 calculation
+	Or3U:	Or3Gate 	Port Map (In0 => Ponce(1),
+					In1 => Ptwice(0),
+					In2 => G(1),
+					Out0 => C(1));							
+	-- C_2 calculation
+	Or4U: Or4Gate Port Map (	InVec(0) => Ponce(2),
+						InVec(1) => Ptwice(1),
+						InVec(2) => Pthree(0),
+						InVec(3) => G(2),
+						Out0 => C(2));
+	-- C_3 calculation
+	Or5U: Or5Gate Port Map (	InVec(0) => Ponce(3),
+						InVec(1) => Ptwice(2),
+						InVec(2) => Pthree(1),
+						InVec(3) => Pfour,
+						InVec(4) => G(3),
+						Out0 => C(3));
+end Structural;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext FSM}
+\label{FSM}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Behavioral of Lab2FSM is
+	Type state is (A, B, C);	
+	signal currentS, nextS: state;	
+	begin	
+		fsm_combi: process (currentS, InVec)
+		begin
+			case currentS is
+				when A =>	Out0 <= 	"11111111";
+								if InVec = "001" 
+									then nextS <= B;
+								elsif InVec = "010"
+									then nextS <= C;
+								else	  nextS <= A;
+								end if;
+								
+				when B =>	Out0 <= 	"11000011";
+								if InVec = "001"
+									then nextS <= C;
+								elsif InVec = "010"
+									then nextS <= A;
+								else	  nextS <= B;
+								end if;
+								
+				when C =>	Out0 <= 	"00111100";
+								if InVec = "001" 
+									then nextS <= A;
+								elsif InVec = "010"
+									then nextS <= B;
+								else	  nextS <= C;
+								end if;
+				when others =>	Out0 <= 	"11111111";
+									nextS <= A;
+			end case;
+		end process;
+		fsm_synchr: process (Clk, Rst)
+			begin
+				if (Rst = '1')
+					then currentS <= A;
+				elsif (rising_edge(Clk))
+					then currentS <= nextS;
+				end if;
+		end process;
+end Behavioral;
+\end{Verbatim}
+\gr
+
+
+\subsection{\latintext FSMtop}
+\label{FSMtop}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+architecture Structural of Lab2FSMTop is
+	component singlepulsegen is
+		Port ( 	clk 		: in std_logic;
+					rst 		: in std_logic;		
+					input 	: in std_logic;
+					output 	: out std_logic);
+	end component;	
+	component Lab2FSM is
+		Port	(	InVec : in  STD_LOGIC_VECTOR (2 downto 0);
+					Clk : in  STD_LOGIC;
+					Rst : in  STD_LOGIC;
+					Out0 : out  STD_LOGIC_VECTOR (7 downto 0));
+	end component;	
+	signal	PulseVec : STD_LOGIC_VECTOR (2 downto 0);
+	begin
+		PulseLoop : For i in 0 to 2 generate		
+			PulseGen : singlepulsegen  Port Map (   rst => Rst,
+								input => InVec(i),
+								clk => Clk,
+								output => PulseVec(i));
+		end generate;		
+		FSMU : Lab2FSM		Port Map (	InVec => PulseVec,
+								Clk	=> Clk,
+								Rst	=> Rst,
+								Out0	=> Led);
+end Structural;
+\end{Verbatim}
+\gr
+
+\subsection{\latintext CLA test bench}
+\label{test}
+\en
+\noskip
+\begin{Verbatim}[baselinestretch=0.75,fontsize=\small,numbers=left]
+   stim_proc: process
+   begin
+      wait for 50 ns;
+		for i in 0 to 15 loop -- loop that checks all possible input values
+			A <= STD_LOGIC_VECTOR (unsigned(A) + 1);
+			for j in 0 to i loop
+				B <= STD_LOGIC_VECTOR (unsigned(B) + 1);
+				wait for 50 ns;
+			end loop;
+		end loop;
+      wait;
+   end process;
+\end{Verbatim}
+\gr
+
+
+%\section{Εκτέλεση}
+%
+%
+%\gr
+%\section{Συμπεράσματα}
+%
+%
+%\gr
+%
+%
+
+
+%\begin{figure}[htpb]
+%\centering
+%\setlength{\abovecaptionskip}{-10pt}
+%\makebox[\textwidth]{%
+%\includegraphics[width=0.7\textwidth, angle =0, trim = 5mm 10mm 40mm 15mm,clip=true]{images/circuit1.pdf}}
+%% Place the label just after the caption to make the link work
+%\en
+%\begin{align*}
+%\textup{Led}(0) &= \textup{IN0}\cdot \textup{IN1} \cdot \textup{Btn0} & \textup{Led}(3) &= \overline{\textup{IN0}}\cdot \textup{Btn3}\\
+%\textup{Led}(1) &= (\textup{IN0}\oplus \textup{IN1}) \cdot \textup{Btn1} & \textup{Led}(4) &= \textup{IN0}\\
+%\textup{Led}(2) &= \overline{(\textup{IN0} + \textup{IN1})} \cdot \textup{Btn2} & \textup{Led}(5) &= \textup{IN1}\\
+%\end{align*}
+%\gr
+%\caption{Λογικό διάγραμμα σε επίπεδο πυλών και οι αντίστοιχες εξισώσεις του κυκλώματος 1.}
+%\label{fig:circuit1}
+%\end{figure} % table makes a floating object with a title
+
+%\begin{figure}[htpb]
+%\centering
+%\setlength{\abovecaptionskip}{-20pt}
+%\makebox[\textwidth]{%
+%\includegraphics[width=1\textwidth, angle =0, trim = 10mm 95mm 30mm 60mm,clip=true]{images/FullAdder.pdf}}
+%% Place the label just after the caption to make the link work
+%\en
+%\begin{align*}
+%\textup{First HalfAdder: } && \textup{S} &= \textup{IN0}\oplus \textup{IN1} & \textup{C}_0 &= \textup{IN0} \cdot \textup{IN0}\\
+%\textup{Second HalfAdder: }&& \textup{Led(0)} &= \textup{IN2} \oplus \textup{S}_0 & \textup{C}_1 &= \textup{IN2} \cdot \textup{S}_0\\
+%&&&&  \textup{Led}(1) &= \textup{C}_0 + \textup{C}_1
+%\end{align*}
+%\gr
+%\caption{\en Block diagram \gr και οι αντίστοιχες εξισώσεις του \en 1-bit full adder, \gr δομημένος με δύο \en half adders \gr και μία πύλη \en OR.}
+%\label{fig:FullAdder}
+%\end{figure} % table makes a floating object with a title
+%
+%%\begin{figure}[htpb]
+%%\centering
+%%\makebox[\textwidth]{%
+%%\includegraphics[width=0.5\textwidth, angle =0, trim = 10mm 80mm 150mm 75mm,clip=true]{images/HalfAdder.pdf}}
+%%% Place the label just after the caption to make the link work
+%%\caption{Διάγραμμα σε επίπεδο πυλών του \en Half Adder.\gr}
+%%\label{fig:HalfAdder}
+%%\end{figure} % table makes a floating object with a title
+%
+
+%
+%
+%
+
+%
+%%\setlength{\abovedisplayskip}{-10pt}
+%%\setlength{\belowdisplayskip}{3pt}

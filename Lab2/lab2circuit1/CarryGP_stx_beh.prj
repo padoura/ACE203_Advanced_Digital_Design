@@ -1,0 +1,3 @@
+vhdl isim_temp "XorGate.vhd"
+vhdl isim_temp "AndGate.vhd"
+vhdl isim_temp "CarryGP.vhd"

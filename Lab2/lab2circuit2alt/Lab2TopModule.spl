@@ -1,0 +1,7 @@
+[Inputs]
+Clk
+Rst
+=InVec[2:0]=
+[Outputs]
+=Led[7:0]=
+[BiDir]

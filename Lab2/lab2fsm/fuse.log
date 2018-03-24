@@ -1,0 +1,25 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Test_Lab2Top_isim_beh.exe" -prj "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Test_Lab2Top_beh.prj" "work.Test_Lab2Top" 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/singlepulsegen.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Lab2FSM.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Lab2FSMTop.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Test_Lab2Top.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity singlepulsegen [singlepulsegen_default]
+Compiling architecture behavioral of entity Lab2FSM [lab2fsm_default]
+Compiling architecture structural of entity Lab2FSMTop [lab2fsmtop_default]
+Compiling architecture behavior of entity test_lab2top
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2fsm/Test_Lab2Top_isim_beh.exe
+Fuse Memory Usage: 32700 KB
+Fuse CPU Usage: 514 ms

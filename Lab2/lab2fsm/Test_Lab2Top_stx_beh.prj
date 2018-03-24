@@ -1,0 +1,4 @@
+vhdl isim_temp "singlepulsegen.vhd"
+vhdl isim_temp "Lab2FSM.vhd"
+vhdl isim_temp "Lab2FSMTop.vhd"
+vhdl isim_temp "Test_Lab2Top.vhd"

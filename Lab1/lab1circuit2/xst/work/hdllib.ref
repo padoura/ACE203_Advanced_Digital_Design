@@ -1,0 +1,10 @@
+EN halfadder NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" sub00/vhpl04 1488549120
+EN orgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" sub00/vhpl06 1488549122
+EN xorgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" sub00/vhpl00 1488549116
+AR fulladder structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" sub00/vhpl09 1488549125
+AR halfadder structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/HalfAdder.vhd" sub00/vhpl05 1488549121
+EN fulladder NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/FullAdder.vhd" sub00/vhpl08 1488549124
+AR orgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/OrGate.vhd" sub00/vhpl07 1488549123
+EN andgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" sub00/vhpl02 1488549118
+AR xorgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/XorGate.vhd" sub00/vhpl01 1488549117
+AR andgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit2/AndGate.vhd" sub00/vhpl03 1488549119

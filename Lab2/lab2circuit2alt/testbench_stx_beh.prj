@@ -1,0 +1,2 @@
+vhdl isim_temp "singlepulsegen.vhd"
+vhdl isim_temp "../testbench.vhd"

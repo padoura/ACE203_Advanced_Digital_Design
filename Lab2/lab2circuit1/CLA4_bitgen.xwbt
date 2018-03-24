@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit1\CLA4.ncd
+OUTFILE=D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit1\CLA4.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab2\lab2circuit1
+LICENSE=WebPack
+USER_INFO=211313720_0_0_057

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top_Test_isim_beh.exe" -prj "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/Lab3Top_Test_beh.prj" "work.Lab3Top_Test" 

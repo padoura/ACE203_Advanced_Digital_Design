@@ -1,0 +1,44 @@
+Running: D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Test_Lab2Top_isim_beh.exe -prj D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Test_Lab2Top_beh.prj work.Test_Lab2Top 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/OrGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/NorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Or4Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Nor3Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/AndGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/OneHotCombLogic.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/NotGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/DFlipFlop.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/singlepulsegen.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/LedCombLogic.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Lab2FSM.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Lab2TopModule.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Test_Lab2Top.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity singlepulsegen [singlepulsegen_default]
+Compiling package numeric_std
+Compiling architecture behavioral of entity DFlipFlop [dflipflop_default]
+Compiling architecture behavioral of entity NotGate [notgate_default]
+Compiling architecture behavioral of entity AndGate [andgate_default]
+Compiling architecture behavioral of entity OrGate [orgate_default]
+Compiling architecture behavioral of entity NorGate [norgate_default]
+Compiling architecture structural of entity Nor3Gate [nor3gate_default]
+Compiling architecture structural of entity Or4Gate [or4gate_default]
+Compiling architecture structural of entity OneHotCombLogic [onehotcomblogic_default]
+Compiling architecture structural of entity Lab2FSM [lab2fsm_default]
+Compiling architecture structural of entity LedCombLogic [ledcomblogic_default]
+Compiling architecture structural of entity Lab2TopModule [lab2topmodule_default]
+Compiling architecture behavior of entity test_lab2top
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2/Test_Lab2Top_isim_beh.exe
+Fuse Memory Usage: 36204 KB
+Fuse CPU Usage: 1029 ms

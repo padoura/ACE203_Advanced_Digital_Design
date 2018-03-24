@@ -1,0 +1,6 @@
+vhdl isim_temp "mux.vhd"
+vhdl isim_temp "mux4x1.vhd"
+vhdl isim_temp "FSM_UN_SWAP.vhd"
+vhdl isim_temp "FSM_Add_Sub.vhd"
+vhdl isim_temp "FSMStack.vhd"
+vhdl isim_temp "FSMTop.vhd"

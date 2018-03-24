@@ -1,0 +1,12 @@
+AR norgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" sub00/vhpl05 1488485165
+EN lab1circuit1 NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" sub00/vhpl08 1488485168
+EN notgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" sub00/vhpl06 1488485166
+EN xorgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" sub00/vhpl02 1488485162
+AR topmodule structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TopModule.vhd" sub00/vhpl11 1488485171
+EN norgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" sub00/vhpl04 1488485164
+EN andgate NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" sub00/vhpl00 1488485160
+EN topmodule NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TopModule.vhd" sub00/vhpl10 1488485170
+AR xorgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" sub00/vhpl03 1488485163
+AR lab1circuit1 structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" sub00/vhpl09 1488485169
+AR notgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" sub00/vhpl07 1488485167
+AR andgate behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" sub00/vhpl01 1488485161

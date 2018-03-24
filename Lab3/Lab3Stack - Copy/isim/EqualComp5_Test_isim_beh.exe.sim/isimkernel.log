@@ -1,0 +1,29 @@
+Command line:
+   EqualComp5_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55632
+
+Tue Mar 28 23:55:19 2017
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 501.207 Meg
+
+ Total Signals          : 53
+ Total Nets             : 25
+ Total Signal Drivers   : 14
+ Total Blocks           : 27
+ Total Primitive Blocks : 13
+ Total Processes        : 13
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 394
+Total Line Count : 21
+
+ Total Simulation Time: 0.0156 sec
+
+ Current Memory Usage: 501.207 Meg
+
+Wed Mar 29 00:01:21 2017
+

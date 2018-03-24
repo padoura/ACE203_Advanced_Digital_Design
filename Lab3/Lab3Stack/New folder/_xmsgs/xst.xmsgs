@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/MemoryStack/MemoryStack_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/MemoryStack</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/MemoryStack/MemoryStack_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/MemoryStack.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab3/Lab3Stack/ipcore_dir/MemoryStack.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Dropbox\ece\Spring_2017\Advanced Digital Design\Lab\Lab3\Lab3Stack\xst\work\xil_4160_23&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">Add</arg>&gt; of instance &lt;<arg fmt="%s" index="2">Stack</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">StackCircuit</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">StackCircuit</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+</messages>
+

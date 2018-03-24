@@ -1,0 +1,88 @@
+V3 52
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And3Gate.vhd" 2017/03/01.18:21:41 O.87xd
+EN work/And3Gate 1489290204 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And3Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/And3Gate/Structural 1489290205 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And3Gate.vhd" \
+      EN work/And3Gate 1489290204 CP AndGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And4Gate.vhd" 2017/03/12.03:54:01 O.87xd
+EN work/And4Gate 1489290200 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And4Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/And4Gate/Structural 1489290201 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And4Gate.vhd" \
+      EN work/And4Gate 1489290200 CP AndGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And5Gate.vhd" 2017/03/12.04:45:08 O.87xd
+EN work/And5Gate 1489290206 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And5Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/And5Gate/Structural 1489290207 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And5Gate.vhd" \
+      EN work/And5Gate 1489290206 CP And4Gate CP AndGate
+EN work/CarryGP 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryGP.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/CarryGP/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryGP.vhd" \
+      EN work/CarryGP 0 CP XorGate CP AndGate
+EN work/CarryLA 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryLA.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/CarryLA/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryLA.vhd" \
+      EN work/CarryLA 0 CP AndGate CP And3Gate CP And4Gate CP And5Gate CP OrGate \
+      CP Or3Gate CP Or4Gate CP Or5Gate
+EN work/CLA4 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CLA4.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/CLA4/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CLA4.vhd" \
+      EN work/CLA4 0 CP CarryGP CP CarryLA CP Sum
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or3Gate.vhd" 2017/03/01.03:57:51 O.87xd
+EN work/Or3Gate 1489290208 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or3Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Or3Gate/Structural 1489290209 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or3Gate.vhd" \
+      EN work/Or3Gate 1489290208 CP OrGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or4Gate.vhd" 2017/03/02.19:34:53 O.87xd
+EN work/Or4Gate 1489290198 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or4Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Or4Gate/Structural 1489290199 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or4Gate.vhd" \
+      EN work/Or4Gate 1489290198 CP OrGate
+EN work/Or5Gate 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or5Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Or5Gate/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or5Gate.vhd" \
+      EN work/Or5Gate 0 CP Or4Gate CP OrGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/OrGate.vhd" 2017/02/24.22:59:51 O.87xd
+EN work/OrGate 1489290194 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/OrGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/OrGate/Behavioral 1489290195 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/OrGate.vhd" \
+      EN work/OrGate 1489290194
+EN work/Sum 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Sum.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Sum/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Sum.vhd" \
+      EN work/Sum 0 CP Xor3Gate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Xor3Gate.vhd" 2017/03/12.04:24:28 O.87xd
+EN work/Xor3Gate 1489290202 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Xor3Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Xor3Gate/Structural 1489290203 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Xor3Gate.vhd" \
+      EN work/Xor3Gate 1489290202 CP XorGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/XorGate.vhd" 2017/02/25.19:18:09 O.87xd
+EN work/XorGate 1489290196 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/XorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/XorGate/Behavioral 1489290197 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/XorGate.vhd" \
+      EN work/XorGate 1489290196

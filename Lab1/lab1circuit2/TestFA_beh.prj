@@ -1,0 +1,6 @@
+vhdl work "XorGate.vhd"
+vhdl work "AndGate.vhd"
+vhdl work "OrGate.vhd"
+vhdl work "HalfAdder.vhd"
+vhdl work "FullAdder.vhd"
+vhdl work "TestFA.vhd"

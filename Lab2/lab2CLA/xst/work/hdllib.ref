@@ -1,0 +1,11 @@
+AR carryla behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryLA.vhd" sub00/vhpl09 1489432027
+AR cla4 structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.vhd" sub00/vhpl07 1489432031
+AR sum structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Sum.vhd" sub00/vhpl05 1489431236
+AR carryla structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryLA.vhd" sub00/vhpl03 1489431234
+AR carrygp behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryGP.vhd" sub00/vhpl08 1489432025
+EN carrygp NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryGP.vhd" sub00/vhpl00 1489432024
+EN carryla NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryLA.vhd" sub00/vhpl02 1489432026
+EN sum NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Sum.vhd" sub00/vhpl04 1489432028
+AR carrygp structural "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CarryGP.vhd" sub00/vhpl01 1489431232
+AR sum behavioral "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/Sum.vhd" sub00/vhpl10 1489432029
+EN cla4 NULL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/CLA4.vhd" sub00/vhpl06 1489432030

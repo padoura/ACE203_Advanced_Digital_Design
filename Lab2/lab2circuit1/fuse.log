@@ -1,0 +1,46 @@
+Running: D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Test_CLA4_isim_beh.exe -prj D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Test_CLA4_beh.prj work.Test_CLA4 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/OrGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/AndGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/XorGate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or4Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And4Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Xor3Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or5Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Or3Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And5Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/And3Gate.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Sum.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryLA.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CarryGP.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/CLA4.vhd" into library work
+Parsing VHDL file "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Test_CLA4.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity XorGate [xorgate_default]
+Compiling architecture behavioral of entity AndGate [andgate_default]
+Compiling architecture structural of entity CarryGP [carrygp_default]
+Compiling architecture structural of entity And3Gate [and3gate_default]
+Compiling architecture structural of entity And4Gate [and4gate_default]
+Compiling architecture structural of entity And5Gate [and5gate_default]
+Compiling architecture behavioral of entity OrGate [orgate_default]
+Compiling architecture structural of entity Or3Gate [or3gate_default]
+Compiling architecture structural of entity Or4Gate [or4gate_default]
+Compiling architecture structural of entity Or5Gate [or5gate_default]
+Compiling architecture structural of entity CarryLA [carryla_default]
+Compiling architecture structural of entity Xor3Gate [xor3gate_default]
+Compiling architecture structural of entity Sum [sum_default]
+Compiling architecture structural of entity CLA4 [cla4_default]
+Compiling architecture behavior of entity test_cla4
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 32 VHDL Units
+Built simulation executable D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit1/Test_CLA4_isim_beh.exe
+Fuse Memory Usage: 34884 KB
+Fuse CPU Usage: 623 ms

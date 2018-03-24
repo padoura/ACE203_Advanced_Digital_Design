@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
+# Start of session at: Mon Mar 13 20:54:10 2017
+# Process ID: 124
+# Log file: D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/planAhead_run_1/planAhead.log
+# Journal file: D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Device-25] Loading parts and site information from D:/Xilinx/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [D:/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source {D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/pa.fromNetlist.tcl}
+# create_project -name lab2CLA -dir "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2CLA/planAhead_run_1" -part xc3s100ecp132-5
+Parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 7.545w.  Memory (MB): 532.457p 11.598g
+ERROR: 'rdi::source' was cancelled
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

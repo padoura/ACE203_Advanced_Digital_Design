@@ -1,0 +1,78 @@
+V3 47
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/AndGate.vhd" 2017/02/22.23:49:43 O.87xd
+EN work/AndGate 1489751605 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/AndGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/AndGate/Behavioral 1489751606 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/AndGate.vhd" \
+      EN work/AndGate 1489751605
+EN work/DFlipFlop 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/DFlipFlop.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/DFlipFlop/Behavioral 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/DFlipFlop.vhd" \
+      EN work/DFlipFlop 0
+EN work/Lab2FSM 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Lab2FSM.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Lab2FSM/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Lab2FSM.vhd" \
+      EN work/Lab2FSM 0 CP DFlipFlop CP NotGate CP OneHotCombLogic CP OrGate \
+      CP AndGate
+EN work/Lab2TopModule 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Lab2TopModule.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Lab2TopModule/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Lab2TopModule.vhd" \
+      EN work/Lab2TopModule 0 CP singlepulsegen CP Lab2FSM CP LedCombLogic
+EN work/LedCombLogic 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/LedCombLogic.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/LedCombLogic/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/LedCombLogic.vhd" \
+      EN work/LedCombLogic 0 CP OrGate
+EN work/Nor3Gate 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Nor3Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Nor3Gate/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Nor3Gate.vhd" \
+      EN work/Nor3Gate 0 CP OrGate CP NorGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/NorGate.vhd" 2017/02/25.04:00:39 O.87xd
+EN work/NorGate 1489751603 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/NorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/NorGate/Behavioral 1489751604 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/NorGate.vhd" \
+      EN work/NorGate 1489751603
+EN work/NotGate 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/NotGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/NotGate/Behavioral 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/NotGate.vhd" \
+      EN work/NotGate 0
+EN work/OneHotCombLogic 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/OneHotCombLogic.vhd" \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
+AR work/OneHotCombLogic/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/OneHotCombLogic.vhd" \
+      EN work/OneHotCombLogic 0 CP AndGate CP Nor3Gate CP Or4Gate
+EN work/Or4Gate 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Or4Gate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Or4Gate/Structural 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/Or4Gate.vhd" \
+      EN work/Or4Gate 0 CP OrGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/OrGate.vhd" 2017/02/24.22:59:51 O.87xd
+EN work/OrGate 1489751601 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/OrGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/OrGate/Behavioral 1489751602 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/OrGate.vhd" \
+      EN work/OrGate 1489751601
+EN work/singlepulsegen 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/singlepulsegen.vhd" \
+      PB ieee/std_logic_1164 1325952872 PB ieee/std_logic_arith 1325952873 \
+      PB ieee/STD_LOGIC_UNSIGNED 1325952875
+AR work/singlepulsegen/behavioral 0 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab2/lab2circuit2a/singlepulsegen.vhd" \
+      EN work/singlepulsegen 0

@@ -1,0 +1,43 @@
+V3 23
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" 2017/02/22.23:49:43 O.87xd
+EN work/AndGate 1488485160 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/AndGate/Behavioral 1488485161 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/AndGate.vhd" \
+      EN work/AndGate 1488485160
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" 2017/03/02.21:24:49 O.87xd
+EN work/Lab1Circuit1 1488485168 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/Lab1Circuit1/Structural 1488485169 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/Lab1Circuit1.vhd" \
+      EN work/Lab1Circuit1 1488485168 CP AndGate CP XorGate CP NorGate CP NotGate
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" 2017/02/25.04:00:39 O.87xd
+EN work/NorGate 1488485164 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/NorGate/Behavioral 1488485165 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NorGate.vhd" \
+      EN work/NorGate 1488485164
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" 2017/02/23.00:00:51 O.87xd
+EN work/NotGate 1488485166 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/NotGate/Behavioral 1488485167 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/NotGate.vhd" \
+      EN work/NotGate 1488485166
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TopModule.vhd" 2017/03/02.21:23:27 O.87xd
+EN work/TopModule 1488485170 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TopModule.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/TopModule/Structural 1488485171 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/TopModule.vhd" \
+      EN work/TopModule 1488485170 CP Lab1Circuit1
+FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" 2017/02/22.23:57:47 O.87xd
+EN work/XorGate 1488485162 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" \
+      PB ieee/std_logic_1164 1325952872
+AR work/XorGate/Behavioral 1488485163 \
+      FL "D:/Dropbox/ece/Spring_2017/Advanced Digital Design/Lab/Lab1/lab1circuit1a/XorGate.vhd" \
+      EN work/XorGate 1488485162
